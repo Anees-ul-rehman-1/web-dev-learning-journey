@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1</title>
+    <style>
+/* =========================
+   Chapter 1 - style.css
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+    line-height: 1.8;
+    padding: 40px;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    background-color: #1e293b;
+    color: white;
+    padding: 18px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-size: 34px;
+}
+
+/* Sub Headings */
+h2 {
+    color: #0f172a;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    border-left: 6px solid #2563eb;
+    padding-left: 12px;
+}
+
+h3 {
+    color: #0f172a;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+/* Learning Note */
+p:first-of-type {
+    background-color: #dbeafe;
+    border-left: 6px solid #2563eb;
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+/* Code Blocks */
+pre {
+    background-color: #0f172a;
+    color: #e2e8f0;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin: 20px 0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Image Styling */
+img {
+    display: block;
+    max-width: 100%;
+    width: 500px;
+    margin: 25px auto;
+    border-radius: 12px;
+    border: 3px solid #cbd5e1;
+}
+
+/* List Styling */
+ul {
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p,
+    li {
+        font-size: 16px;
+    }
+
+    pre {
+        font-size: 13px;
+    }
+}
+            
+    </style>
+</head>
+
+<body>
+    <p>
+        Learning Note: I am currently focusing on HTML as part of my web development journey. The CSS styling used in
+        this page was generated with the help of ChatGPT to improve readability and presentation, as I am still in the
+        early phase of learning HTML. I will properly start CSS after completing HTML
+    </p>
+    <h1>CHAPTER 1 – CREATING OUR FIRST WEBSITE</h1>
+    <p>We start building a website by creating a file named index.html. index.html is a special filename which is
+        presented when the website root address is typed.</p>
+    <h2>A BASIC HTML PAGE</h2>
+    <p>Here is a basic HTML page:</p>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang=&quot;en&quot;&gt;
+
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot;&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+            &lt;title&gt;My first webpage&lt;/title&gt;
+        &lt;/head&gt;
+
+        &lt;body&gt;
+            &lt;h1&gt;My first webpage&lt;/h1&gt;
+            &lt;p&gt;This is my first webpage. I am learning HTML and it is really fun!&lt;/p&gt;
+            &lt;p&gt;Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, molestiae, saepe beatae, recusandae voluptatem
+                dicta aspernatur impedit voluptates deserunt eos praesentium delectus consequuntur! Accusamus doloremque
+                deleniti error iusto. Repellat natus totam eaque suscipit?&lt;/p&gt;
+        &lt;/body&gt;
+
+        &lt;/html&gt;</pre>
+    <p> A tag is like a container for either content or other HTML tags.</p>
+    <img src="example.png" alt="image">
+    <h3>IMPORTANT NOTES</h3>
+    <ul>
+        <li>head & body tags are children of HTML tag.
+        </li>
+        <li> HTML is the parent of head & body tags.</li>
+        <li> Most of the HTML elements have opening & closing tag with content in between opening & closing tags.</li>
+        <li>Some HTML tags have no content. These are called Empty elements e.g. br</li>
+        <li> We can either use .htm or .html extension.</li>
+        <li> you can use “inspect element” or “view page source” option from Chrome to look into a website’s HTML Code.
+        </li>
+    </ul>
+    <h3>Comments in HTML</h3>
+    <p>Comments are used to add notes in the code. These notes are not visible on the webpage. They are only for
+        developers to understand the code better.</p>
+    <pre>
+        &lt;!-- This is a comment in HTML --&gt;
+        &lt;!-- Comments are not visible on the webpage --&gt;</pre>
+    <p>Comments are very useful for explaining the code, especially when working in a team or when you want to remember
+        why you wrote a certain piece of code in a particular way.</p>
+    <h3>CASE SENSITIVITY</h3>
+    <p>HTML tags are not case sensitive. This means that &lt;h1&gt; and &lt;H1&gt; are treated the same by the browser.
+        However, it is a good practice to use lowercase letters for HTML tags to maintain consistency and readability in
+        your code.</p>
+    <h3>DOCTYPE DECLARATION</h3>
+    <p>The &lt;!DOCTYPE html&gt; declaration is used to specify the version of HTML being used in the document. It helps
+        the browser to render the page correctly. In modern web development, we use &lt;!DOCTYPE html&gt; to indicate
+        that we are using HTML5, which is the latest version of HTML.</p>
+
+</body>
+
+</html>
