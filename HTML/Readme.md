@@ -1,76 +1,165 @@
-# 🌐 Web Development Journey – HTML
+# HTML Journey 🚀
 
-This repository is part of my Web Development learning journey, starting with **HTML (HyperText Markup Language)**.  
-I am following a structured course to build strong fundamentals and gradually move towards professional-level web development.
-
----
-
-## 📚 Course Overview
-
-This section is based on a comprehensive HTML course that takes you from beginner to advanced level.
-
-### 🔹 Level 1 – Basics
-- Introduction to HTML  
-- Setting up VS Code  
-- Understanding basic HTML structure  
-- Learning essential tags  
-
-### 🔹 Level 2 & 3 – Formatting & Layout
-- Adding images, videos, and links  
-- Working with media elements  
-- Using semantic tags for better structure  
-- Creating clean and readable web pages  
-
-### 🔹 Level 4 – Pro Level
-- Lists and Tables  
-- Forms (user input handling)  
-- Embedding external content (iframe, etc.)  
+Welcome to my **Web Development Journey** repository!  
+This folder contains everything I learn and practice while mastering **HTML** — the foundation of web development.
 
 ---
 
-## 🚀 Key Learnings
+# 📘 About This HTML Journey
 
-- ✅ Importance of proper HTML structure  
-- ✅ Use of semantic tags for SEO & readability  
-- ✅ Real-time development using Live Server  
-- ✅ Building beginner projects for practice  
+HTML (*HyperText Markup Language*) is the backbone of every website on the internet.  
+I am learning HTML step-by-step to build a strong foundation in web development before moving toward CSS, JavaScript, and advanced technologies.
 
----
-
-## 💻 Tools Used
-
-- Visual Studio Code (VS Code)  
-- Live Server Extension  
+This journey is focused on:
+- Understanding HTML structure
+- Building real web pages
+- Practicing semantic HTML
+- Learning best practices
+- Preparing for modern frontend development
 
 ---
 
-## 📌 Goals
+# 🎯 Purpose
 
-- Build strong HTML foundation  
-- Create real-world projects  
-- Move towards CSS, JavaScript, and full-stack development  
+The goal of this folder is to document my learning progress and improve my skills through:
+- Notes
+- Practice files
+- Mini projects
+- Experiments
+- Revision material
 
----
-
-## 🛠️ Projects (Coming Soon)
-
-- Personal Portfolio Website  
-- Resource Library Website  
+This repository will help me track my growth as a web developer.
 
 ---
 
-## 📈 Progress
+# 🛠 Tools I Am Using
 
-This repository will be updated regularly as I continue learning and building new projects.
-
----
-
-## 🤝 Contribution
-
-This is a personal learning repository, but suggestions and improvements are always welcome!
+- **HTML5**
+- **VS Code**
+- **Live Server Extension**
+- **Git & GitHub**
 
 ---
 
-## 📬 Connect with Me
+# 📚 Topics Covered
 
-Feel free to check out my GitHub profile and follow my journey 🚀
+## Chapter 0 — Introduction
+- What is HTML?
+- Why HTML is important
+- Why CSS & JavaScript are needed
+- Installing VS Code
+- Understanding websites
+
+---
+
+## Chapter 1 — Creating Our First Website
+- Basic HTML page structure
+- HTML boilerplate
+- Comments in HTML
+- Case sensitivity
+- First webpage creation
+
+---
+
+## Chapter 2 — Basic HTML Tags
+- Headings
+- Paragraphs
+- Anchor tags
+- Images
+- Bold, Italic & Underline
+- Line breaks
+- Horizontal rules
+- Subscript & Superscript
+- Pre tag
+
+---
+
+## Chapter 3 — Page Layout
+- Div tag
+- Span tag
+- Link attributes
+- Structuring webpages
+
+---
+
+## Chapter 4 — Lists, Tables & Forms
+- Ordered & unordered lists
+- Tables
+- Forms
+- Input fields
+- Embedding videos
+- Media attributes
+
+---
+
+## Chapter 5 — SEO Basics
+- What is SEO?
+- Types of SEO
+- HTML SEO fundamentals
+
+---
+
+# 💡 Why I Am Learning HTML
+
+HTML is the first step toward becoming a web developer.  
+By mastering HTML, I will be able to:
+- Create websites
+- Build web applications
+- Learn frontend frameworks easily
+- Understand how the web works
+
+---
+
+# 📈 Future Plan
+
+After completing HTML, I will continue with:
+1. CSS
+2. JavaScript
+3. Responsive Design
+4. React
+5. Backend Development
+6. Full Stack Projects
+
+---
+
+# 🤝 Acknowledgements
+
+Special thanks to:
+- Web development educators
+- Open-source contributors
+- The developer community
+- Everyone sharing knowledge online
+
+---
+
+# 🚀 Learning Philosophy
+
+> “Consistency is more important than perfection.”
+
+I believe that practicing daily and building projects is the best way to learn web development.
+
+---
+
+# 📂 Folder Structure
+
+```bash
+Web-Development-Journey/
+│
+├── HTML/
+│   ├── Chapter-0/
+│   ├── Chapter-1/
+│   ├── Chapter-2/
+│   ├── Chapter-3/
+│   ├── Chapter-4/f
+│   ├── Chapter-5/
+│   └── README.md
+```
+
+---
+
+# ⭐ Final Note
+
+This repository is part of my learning journey.  
+Every project, mistake, and improvement here represents progress toward becoming a better developer.
+
+Thanks for visiting this repository! 🚀
