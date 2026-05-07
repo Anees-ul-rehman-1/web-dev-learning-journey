@@ -157,6 +157,17 @@ Web-Development-Journey/
 
 ---
 
+# 🎯 Important Note (About Styling)
+
+Some of the files in this repository may include **basic CSS styling**, but:
+
+- My **main focus is HTML only**
+- CSS is only used for **better visual presentation and motivation**
+- In some cases, styling is generated with the help of tools (like ChatGPT) to improve readability
+- I will properly learn **CSS after completing HTML in full depth**
+
+This does NOT mean I have started learning CSS professionally yet — it is only for practice enhancement.
+
 # ⭐ Final Note
 
 This repository is part of my learning journey.  
