@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAPTER 2 – BASIC HTML TAGS</title>
+    <style> 
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #eef2ff, #f8fbff);
+    color: #1e293b;
+    line-height: 1.8;
+    padding: 50px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Intro Note */
+body > p:first-of-type{
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    border-left: 6px solid #4f46e5;
+    padding: 18px 22px;
+    border-radius: 14px;
+    margin-bottom: 35px;
+    font-size: 15px;
+    color: #334155;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* Main Heading */
+body > h1{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+body > h1::after{
+    content: "";
+    width: 120px;
+    height: 5px;
+    background: linear-gradient(to right, #4f46e5, #06b6d4);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px;
+}
+
+/* Section Headings */
+body > h2{
+    font-size: 34px;
+    color: #1d4ed8;
+    margin-top: 45px;
+    margin-bottom: 15px;
+}
+
+/* Sub Headings */
+body > h3{
+    font-size: 24px;
+    color: #0f172a;
+    margin-top: 35px;
+    margin-bottom: 14px;
+    padding: 12px 18px;
+    background: #ffffff;
+    border-left: 5px solid #4f46e5;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Paragraphs */
+p{
+    font-size: 17px;
+    margin-bottom: 16px;
+    color: #334155;
+}
+
+/* Inline Code */
+code{
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Code Blocks */
+pre{
+    background: #0f172a;
+    color: #38bdf8;
+    padding: 22px;
+    margin: 22px 0;
+    border-radius: 16px;
+    overflow-x: auto;
+    font-size: 15px;
+    line-height: 1.7;
+    white-space: pre-wrap;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Smooth Hover Effect */
+pre:hover{
+    transform: translateY(-2px);
+    transition: 0.3s ease;
+}
+
+/* Links */
+a{
+    color: #2563eb;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+a:hover{
+    color: #4f46e5;
+    text-decoration: underline;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #94a3b8;
+    border-radius: 20px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    body{
+        padding: 25px 15px;
+    }
+
+    body > h1{
+        font-size: 34px;
+    }
+
+    body > h2{
+        font-size: 28px;
+    }
+
+    body > h3{
+        font-size: 21px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    pre{
+        font-size: 13px;
+        padding: 16px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <p>
+        Learning Note: I am currently focusing on HTML as part of my web development journey. The CSS styling used in
+        this page was generated with the help of ChatGPT to improve readability and presentation, as I am still in the
+        early phase of learning HTML. I will properly start CSS after completing HTML
+    </p>
+    <h1>CHAPTER 2 – BASIC HTML TAGS</h1>
+    <hr>
+    <p>We can add elements inside the body tag to define the page layout.</p>
+    <h2>HTML ELEMENT</h2>
+    <p>An HTML element consists of everything from the starting tag to the ending tag.</p>
+    <pre>
+    &lt;body&gt;
+         content
+    &lt;/body&gt;
+    </pre>
+    <h3>HTML ATTRIBUTES</h3>
+    <p>HTML attributes provide additional information about an element.</p>
+    <pre>
+        Example: 
+        &lt;a herf="https://www.google.com"&gt;Google&lt;/a&gt;
+    </pre>
+    <p>We can either use single or double quotes in attributes.</p>
+    <h3>THE HEADING TAG</h3>
+    <p>Heading tags are used to define headings in HTML. There are six levels of headings, from <code>&lt;h1&gt;</code>
+        to <code>&lt;h6&gt;</code>, with <code>&lt;h1&gt;</code> being the highest level and <code>&lt;h6&gt;</code>
+        being the lowest.</p>
+    <p>Heading tag is used to mark headings in HTML. From h1 to h6, we have tags for the most important to the least
+        important heading.</p>
+    <pre>
+        For example: 
+       <h1> Most important heading H1 </h1>
+       <h2> Another heading H2 </h2>
+       <h3> Another heading H3 </h3> 
+       <h4> Another heading H4 </h4>
+       <h5> Another heading H5 </h5> 
+       <h6> Another heading H6 </h6> 
+    </pre>
+    <p>Note: We should not use HTML headings to make text thick or bold.</p>
+    <h3>THE PARAGRAPH TAG</h3>
+    <p>The paragraph tag is used to define a paragraph in HTML. It is represented by the <code>&lt;p&gt;</code> tag.</p>
+    <pre>
+        For example: 
+        &lt;p&gt; This is a paragraph. &lt;/p&gt; </pre>
+    <h3>THE ANCHOR TAG</h3>
+    <p>The anchor tag is used to create hyperlinks in HTML. It is represented by the <code>&lt;a&gt;</code> tag.</p>
+    <pre>
+        For example: 
+        &lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</pre>
+    <h3>THE IMAGE TAG</h3>
+    <p>The image tag is used to insert images in HTML. It is represented by the <code>&lt;img&gt;</code> tag.</p>
+    <pre>
+        For example: 
+        &lt;img src="image.jpg" alt="Description of image"&gt;</pre>
+    <h3>BOLD, ITALIC AND UNDERLINE TAGS</h3>
+    <p>We can use the <code>&lt;b&gt;</code> tag to make text bold, the <code>&lt;i&gt;</code> tag to make text italic, and the
+        <code>&lt;u&gt;</code> tag to underline text.</p>
+    <pre>
+        For example:
+        &lt;b&gt; This text is bold. &lt;/b&gt;
+        &lt;i&gt; This text is italic. &lt;/i&gt;
+        &lt;u&gt; This text is underlined. &lt;/u&gt;</pre>
+    <h3>BR TAG</h3>
+    <p>The <code>&lt;br&gt;</code> tag is used to insert a line break in HTML. It is an empty tag, meaning it does not have a closing tag.</p>
+    <pre>
+        For example: 
+        This is the first line. &lt;br&gt; This is the second line.</pre>   
+    <h3>BIG AND SMALL TAGS</h3>
+    <p>The <code>&lt;big&gt;</code> tag is used to make text larger, while the <code>&lt;small&gt;</code> tag is used to make text smaller.</p>
+    <pre>
+        For example: 
+        &lt;big&gt; This text is big. &lt;/big&gt;
+        &lt;small&gt; This text is small. &lt;/small&gt;</pre>
+    <h3>HR TAG</h3>
+    <p>The <code>&lt;hr&gt;</code> tag is used to insert a horizontal rule in HTML. It is an empty tag, meaning it does not have a closing tag.</p>
+    <pre>
+        For example: 
+        &lt;hr&gt;</pre>  
+    <h3>SUBSCRIPT & SUPERSCRIPT TAGS</h3>  
+    <p>The <code>&lt;sub&gt;</code> tag is used to define subscript text, while the <code>&lt;sup&gt;</code> tag is used to define superscript text.</p>
+    <pre>   
+        For example: 
+        H&lt;sub&gt;2&lt;/sub&gt;O is the chemical formula for water.
+        E = mc&lt;sup&gt;2&lt;/sup&gt; is Einstein's mass-energy equivalence formula.</pre>
+    <h3>PRE TAG</h3>
+    <p>The <code>&lt;pre&gt;</code> tag is used to define preformatted text. Text inside a <code>&lt;pre&gt;</code> element is displayed in a fixed-width font, and it preserves both spaces and line breaks.</p>
+    <pre>
+        For example: 
+        &lt;pre&gt;
+        This is preformatted text.
+        It preserves spaces and line breaks.
+        &lt;/pre&gt;</pre>
+</body>
+
+</html>
