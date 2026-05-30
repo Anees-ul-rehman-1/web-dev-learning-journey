@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter-03</title>
+    <style>
+        /* =========================
+   DESIGN SYSTEM
+========================= */
+:root {
+    --bg: #0f172a;
+    --card: #111827;
+    --text: #e5e7eb;
+    --muted: #9ca3af;
+    --border: rgba(255,255,255,0.08);
+    --code-bg: #0b1220;
+    --accent: #60a5fa;
+}
+
+/* =========================
+   RESET
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+/* =========================
+   HEADER
+========================= */
+header {
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    font-weight: 600;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 18px;
+}
+
+/* =========================
+   SECTION CARD
+========================= */
+section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 30px;
+    transition: 0.25s ease;
+}
+
+section:hover {
+    transform: translateY(-3px);
+    border-color: rgba(96,165,250,0.3);
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1 {
+    font-size: 28px;
+    margin-bottom: 14px;
+}
+
+h2 {
+    font-size: 22px;
+    margin: 18px 0 10px;
+    color: #c7d2fe;
+}
+
+/* =========================
+   TEXT
+========================= */
+p {
+    margin-bottom: 12px;
+    color: var(--text);
+}
+
+/* =========================
+   IMAGE (PRO + ANIMATION)
+========================= */
+img {
+    display: block;
+    width: 60%;
+    max-width: 320px;
+    margin: 18px auto;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover animation */
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* =========================
+   CODE BLOCK (SAFE + PRO)
+========================= */
+pre {
+    background: var(--code-bg);
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    overflow-x: auto;
+    margin: 16px 0;
+}
+
+/* IMPORTANT: keeps formatting safe */
+code {
+    display: block;
+    font-family: Consolas, monospace;
+    font-size: 13px;
+    color: #93c5fd;
+    white-space: pre; /* 👈 prevents breaking */
+}
+
+/* =========================
+   ARTICLE SEPARATION
+========================= */
+article {
+    margin-bottom: 24px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+}
+
+article:last-child {
+    border-bottom: none;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer {
+    text-align: center;
+    padding: 26px;
+    margin-top: 40px;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+}
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <section>
+            <article>
+                <h1>CHAPTER 3 – CREATING A PAGE LAYOUT</h1>
+                <p>When we use the right tag in right place, it results in abetter page layout, better indexing by
+                    search
+                    engines and better user experience.</p>
+                <p>We use the following tags to get the job done.</p>
+                <img src="web layout.png" alt="Website Layout">
+                <p>Inside the main tag we insert the following tags:</p>
+                <pre>
+                    <code>
+                        &lt;!-- The main opening tag --&gt;
+                        &lt;main&gt;
+                               &lt;!-- A page section --&gt;
+                               &lt;section&gt;
+                                       &lt;!-- A self contained content --&gt;
+                                       &lt;article&gt;
+                                             &lt;!-- Cotennt goes here --&gt;
+                                       &lt;/article&gt;
+                               &lt;/section&gt;
+                               &lt;!-- content aside from the main content (e.g: Ads, sidebar etc) --&gt;
+                               &lt;aside&gt;
+                                    &lt;!-- Aside cotent goes here --&gt;
+                               &lt;/aside&gt;
+                        &lt;/main&gt; 
+                    </code>
+                </pre>
+                <p>Creating a page like this is not necessary but it creates a readable & structured layout. Also, they
+                    areuseful for SEO.</p>
+            </article>
+            <article>
+                <h2>LINK ATTRIBUTE</h2>
+                <pre>
+                    <code>
+                        &lt;a href="/home"&gt;Home&lt;/a&gt;
+                        &lt;a href="/home" target="_blank"&gt;Home&lt;/a&gt;
+                    </code>
+                </pre>
+                <p>We can put any content inside an anchor tag (images, headings etc are all allowed).</p>
+                <p>If the page is inside a directory, we need to make sure that we link to the correct page (Same
+                    applies to img tag as well.)</p>
+                <p>We can add links to images like this.</p>
+                <pre>
+                    <code>
+                        &lt;a herf="https//facebook.com"&gt;&lt;img src="a.jpg" width="120"&gt;&lt;/a&gt;
+                        <a href="https://www.facebook.com" target="_blank"><img src="fb.png" width="120" alt=""></a>
+                    </code>
+                </pre>
+            </article>
+            <article>
+                <h2>THE DIV TAG</h2>
+                <p>The &lt;div&gt; tag is often used as a container for other elements. It is a block-level element,
+                    meaning it always takes up the full width available.</p>
+                <pre>
+                    <code>
+                        &lt;div&gt;
+                               &lt;h1&gt; This is heading inside a div. &lt;/h1&gt;
+                               &lt;p&gt; This is peragraph inside a div.&lt;/p&gt
+                        &lt;/div&gt;
+                    </code>
+                </pre>
+            </article>
+            <article>
+                <h2>THE SPAN TAG</h2>
+                <p>The &lt;span&gt; tag is an inline container, meaning it only takes up as much width as necessary.</p>
+                <pre>
+                    <code>
+                        &lt;p&gt; This is a &lt;span&gt;highlighted&lt;/span&gt; word in sentence.&lt;/p&gt;
+                    </code>
+                </pre>
+            </article>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
