@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anees-Ul-Rehman-Portfolio</title>
+    <style>
+        /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+    background: #111827;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav h2 {
+    color: #38bdf8;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* HERO */
+#home {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#home h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+#home b {
+    color: #38bdf8;
+    font-size: 20px;
+}
+
+#home p {
+    margin: 10px 0 20px;
+    color: #cbd5e1;
+}
+
+/* BUTTONS */
+button, .btn {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background: #38bdf8;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button:hover, .btn:hover {
+    background: #0ea5e9;
+}
+
+/* ABOUT */
+#about ul {
+    margin-top: 15px;
+}
+
+#about li {
+    margin: 8px 0;
+}
+
+/* SKILLS */
+#skills ul {
+    list-style: none;
+}
+
+#skills li {
+    background: #1e293b;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+/* PROJECTS */
+#projects li {
+    background: #1e293b;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+/* CONTACT */
+#contact {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#contact input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+    margin-top: 40px;
+    color: #94a3b8;
+}
+    </style>
+</head>
+
+<body>
+    <!-- Q:01 Create an SEO friendly website using HTML.  -->
+    <header>
+        <nav>
+            <h2>AK</h2>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h3>Hi, I'm Anees Ul Rehman 👋</h3>
+            <b>Full Stack Developer</b>
+            <p>I build responsive and SEO optimized websites.</p>
+            <a href="#projects"><button>View Projects</button></a>
+            <a href="#contact"> <button>Contact Me</button></a>
+        </section>
+        <section id="about">
+            <h3>About Me</h3>
+            <hr>
+            <p>I am a passionate web developer who focuses on:</p>
+            <ul>
+                <li>Full Stack Development</li>
+                <li>Clean HTML Structure</li>
+                <li>SEO Optimization</li>
+                <li>Responsive Design</li>
+                <li>Performance-friendly Website</li>
+            </ul>
+        </section>
+        <section id="skills">
+            <ul>
+                <li>HTML5----------100%</li>
+                <li>CSS3------------90%</li>
+                <li>JavaScript------80%</li>
+                <li>SEO-------------80%</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <ul>
+                <li>Project 1: Portfolio Website</li>
+                <li>Project 2: Blog Website</li>
+                <li>Project 3: Landing Page</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <input type="text" placeholder="Name"><br>
+            <input type="email" placeholder="Email"><br>
+            <input type="number" placeholder="Phone"><br>
+            <input type="text" placeholder="Address"><br>
+            <input type="submit" placeholder="Submit"><br>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Muhammad Anees. All Rights Reserved.
+            Built with HTML, CSS & SEO Best Practices.</p>
+    </footer>
+</body>
+
+</html>
