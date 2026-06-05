@@ -1,11 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chapter 04</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navbar">
+            <a href="#lists-section">List</a>
+            <a href="#tables-section">Tables</a>
+            <a href="#forms-section">Forms</a>
+            <a href="#video-section">Video</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Lists in html -->
+        <section id="lists-section">
+            <h1 class="list-title">Lists In HTML</h1>
+            <div class="ordered-list">
+                <!-- ordered lists -->
+                <h2 class="ordered-list-title">Steps to bake a Cake</h2>
+                <ol>
+                    <li class="bake-cake-steps">Preheat the oven to 350<sup>o</sup>F (175<sup>o</sup>C).</li>
+                    <li class="bake-cake-steps">Mix the dry ingredients.</li>
+                    <li class="bake-cake-steps">Whisk the eggs, milk, and vanilla extract.</li>
+                    <li class="bake-cake-steps">Combine wet and dry ingredients.</li>
+                    <li class="bake-cake-steps">Pour the batter into the pan and bake for 30 minutes.</li>
+                    <li class="bake-cake-steps">Let the cake cool before serving.</li>
+                </ol>
+            </div>
+
+            <div class="unordered-list">
+                <!-- unordered lists  -->
+                <h2 class="unordered-list-title">Groceries to buy</h2>
+                <ul>
+                    <li class="groceries-item">Milk</li>
+                    <li class="groceries-item">Bread</li>
+                    <li class="groceries-item">Eggs</li>
+                    <li class="groceries-item">Butter</li>
+                    <li class="groceries-item">Vegetables</li>
+                </ul>
+            </div>
+
+            <div class="definition-list">
+                <!-- defination lists -->
+                <h2 class="definition-list-title">Programming languages</h2>
+                <dl>
+                    <dt class="definition-term">Python</dt>
+                    <dd class="definition-data">A high-level, interpreted programming language known for its ease of
+                        use.</dd>
+
+                    <dt class="definition-term">JavaScript</dt>
+                    <dd class="definition-data">A scripting language primarily used for dynamic web-pages.</dd>
+
+                    <dt class="definition-term">HTML</dt>
+                    <dd class="definition-data">HTML stand for "Hyper Text markup language. The standard markup language
+                        foe creating web pages.
+                    </dd>
+
+                    <dt class="definition-term">CSS</dt>
+                    <dd class="definition-data">A stylesheet language used to describe the presentation of a document
+                        written in HTML.</dd>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Table in HTML -->
+        <section id="tables-section">
+            <h1 class="table-title">Table in HTML</h1>
+            <table class="table">
+                <!-- head of the table  -->
+                <thead class="thead">
+                    <tr class="rows-table">
+                        <th class="table-data">Name</th>
+                        <th class="table-data">Role</th>
+                        <th class="table-data">Salary</th>
+                    </tr>
+                </thead>
+
+                <!-- body of the table -->
+                <tbody class="tbody">
+                    <tr class="rows-table">
+                        <td class="table-data">Anees Ul Rehman</td>
+                        <td class="table-data">Programmer</td>
+                        <td class="table-data">500,000</td>
+                    </tr>
+                    <tr class="rows-table">
+                        <td class="table-data">Nasir Ul Rehman</td>
+                        <td class="table-data">Software Engineer</td>
+                        <td class="table-data">300,000</td>
+                    </tr>
+                    <tr class="rows-table">
+                        <td class="table-data">Yasir Ul Rehman</td>
+                        <td class="table-data">AIML Engineer</td>
+                        <td class="table-data">300,000</td>
+                    </tr>
+                    <tr class="rows-table">
+                        <td class="table-data">Khalil Ul Rehman</td>
+                        <td class="table-data">Backend Developer</td>
+                        <td class="table-data">300,000</td>
+                    </tr>
+                    <tr class="rows-table">
+                        <td class="table-data">Abdul Rehman</td>
+                        <td class="table-data">Frontend Developer</td>
+                        <td class="table-data">300,000</td>
+                    </tr>
+                    <tr class="rows-table">
+                        <td class="table-data">Ikhtiar</td>
+                        <td class="table-data">Software Designer</td>
+                        <td class="table-data">300,000</td>
+                    </tr>
+                    <tr class="rows-table">
+                        <td class="table-data">Aliza</td>
+                        <td class="table-data">Web developer</td>
+                        <td class="table-data">200,000</td>
+                    </tr>
+
+                    <!-- used colspan attriute of td  -->
+                    <tr>
+                        <td class="table-data" colspan="3">Thanks</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+
+        <!-- forms in HTML  -->
+        <section id="forms-section">
+            <h1 class="form-title">Forms in HTML</h1>
+            <form action="/submit.php">
+                <!-- text input for name -->
+                <div class="collect-data">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" placeholder="Enter name" required>
+                </div>
+
+                <!-- tel input for number  -->
+                <div class="collect-data">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" placeholder="Enter phone" required>
+                </div>
+
+                <!-- email input for email -->
+                <div class="collect-data">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter email" required>
+                </div>
+
+                <!-- password input for password  -->
+                <div class="collect-data">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                </div>
+
+                <!-- date input for date of birth  -->
+                <div class="collect-data">
+                    <label for="dob">Date Of Birth</label>
+                    <input type="date" id="dob" required>
+                </div>
+
+                <!-- Dropdown (select input) for gender -->
+                <div class="collect-data">
+                    <label for="gender">Gender</label>
+                    <select id="gender" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Radio iniput for subscription plan -->
+                <div class="collect-data">
+                    <p>Subscription Plan</p>
+                    <label for="basic">Basic</label>
+                    <input type="radio" id="basic" name="subscription" value="basic">
+
+                    <label for="premium">Premium</label>
+                    <input type="radio" id="premium" name="subscription" value="premium">
+
+                    <label for="vip">VIP</label>
+                    <input type="radio" id="vip" name="subscription" value="vip">
+                </div>
+
+                <!-- checkbox input for agree to policy or term etc -->
+                <div class="collect-data">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the terms and conditions</label>
+                </div>
+
+                <!-- textarea input for comment etc -->
+                <div class="collect-data">
+                    <label for="comment">Comment</label>
+                    <textarea id="comment" placeholder="Enter your comment" rows="5"></textarea>
+                </div>
+
+                <!-- submit button  -->
+                <div class="collect-data">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- video in html  -->
+        <section id="video-section">
+            <div>
+                <h2 class="vid-title">Video Embeding in HTML</h2>
+                <video src="assets/vid.mp4" autoplay muted controls loop preload="auto">Your browser
+                    doesn't support this video</video>
+
+                <video autoplay muted controls loop preload="auto">
+                    <source src="assets/vid.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
