@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 04</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <header>
+    </header>
+    <main class="container">
+        <h1 >Chapter 04 - LISTS, TABlES & FORMS</h1>
+        <section class="lists">
+            <h2>LISTS</h2>
+            <p>lists are used to display content which represents a list. </p>
+            <h2>UNORDERED LIST</h2>
+            <p>An unordered list is used to list items that do not have a specific order.</p>
+            <pre>
+                <code>
+                    &lt;ul&gt;
+                        &lt;li&gt;Home&lt;/li&gt;
+                        &lt;li&gt;About&lt;/li&gt;
+                    &lt;/ul&gt;
+                </code>
+            </pre>
+            <h2>ORDERED LIST</h2>
+            <p>An ordered list is used to list items in a specific order, typically numbered.</p>
+            <pre>
+                <code>
+                    &lt;ol&gt;
+                        &lt;li&gt;Phone&lt;/li&gt;
+                        &lt;li&gt;PC&lt;/li&gt;
+                        &lt;li&gt;Laptop&lt;/li&gt;
+                    &lt;/ol&gt;
+                </code>
+            </pre>
+        </section>
+        <section class="tables">
+            <h2>TABLES</h2>
+            <p>The &lt;table&gt; tag in HTML is used to define tables, which are used to format and display tabular data.</p>
+            <ul>
+                <li> <b>&lt;tr&gt; tag:</b> Used to display table row.</li>
+                <li><b>&lt;td&gt; tag:</b> Used to display table data.</li>
+                <li><b>&lt;th&gt; tag:</b> Used in place of table data for displaying table headers.</li>
+            </ul>
+            <p>We can define as many table rows as we want. To add a caption to the table, we use &lt;caption&gt; tag inside table.</p>
+            <ul>
+                <li><b>&lt;thead&gt; tag:</b> Used to wrap table head (caption & &lt;tr&gt; with &lt;th&gt;)</li>
+                <li><b>&lt;tbody&gt; tag:</b> Used to wrap the table body.</li>
+            </ul>
+            <p>Example:</p>
+            <pre>
+                <code>
+                    &lt;table&gt;
+                        &lt;caption&gt;Students Report&lt;/caption&gt;
+                        &lt;thead&gt;
+                            &lt;tr&gt;
+                                &lt;th&gt;Name&lt;/th&gt;
+                                &lt;th&gt;Grade&lt;/th&gt;
+                            &lt;/tr&gt;
+                        &lt;/thead&gt;
+                        &lt;tbody&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Roshan&lt;/td&gt;
+                                &lt;td&gt;A+&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Khalil&lt;/td&gt;
+                                &lt;td&gt;A&lt;/td&gt;
+                            &lt;/tr&gt;
+                            &lt;tr&gt;
+                                &lt;td&gt;Ikhtiyaar&lt;/td&gt;
+                                &lt;td&gt;A-&lt;/td&gt;
+                            &lt;/tr&gt;
+                        &lt;/tbody&gt;
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <h2>COLSPAN ATTRIBUTE</h2>
+            <p>This attribute is used to create cells spanning multiple columns.</p>
+            <pre>
+                <code>
+                    &lt;!-- Span 3 columns --&gt;
+                    &lt;th colspan = "3"&gt;Thank You &lt;/th&gt;
+                </code>
+            </pre>
+        </section>
+        <section class="forms">
+            <h2>HTML FORMS</h2>
+            <p>An HTML &lt;form&gt; tag is used to create a form that collects input from users.</p>
+            <pre><code>
+                &lt;form&gt;
+                    &lt;!-- Elements of forms --&gt;
+                &lt;/form&gt;
+            </code></pre>
+            <p>There are different form elements for different kinds of user input.</p>
+            <ul>
+                <li><b>&lt;input&gt; element:</b> Can be of type text, checkbox, radio, button and submit. We also have a 'file'type.</li>
+                <li><b>&lt;textarea&gt; element:</b> Defines a multiline text iniput 'cols' and 'rows' attribute can be used to size the textarea.</li>
+                <li><b>&lt;select&gt; element:</b> Defines a drop-down list.</li>
+            </ul>
+            <p>Note: You don't have to remember all the tags, you will memorize them with practice.</p>
+        </section>
+        <section class="video">
+            <h2>EMBEDDING VIDEOS</h2>
+            <p>To embed video in HTMl, you can use the &lt;video&gt; tag along with various attribute to control its behavior.</p>
+            <pre>
+                <code>
+                    &lt;video src = 'video.mp4'&gt; Error &lt;/video&gt;
+                </code>
+            </pre>
+            <h2>ATTRIBUTE FOR VIDEO</h2>
+            <p>we can use the following attribute:</p>
+            <ul>
+                <li><b>src:</b>Specifies the URL of the video file (video.mp4 in this case).</li>
+                <li><b>width:</b>Adjusts the width of the video player. Height adjusts automatically to maintain aspect ratio.</li>
+                <li><b>controls:</b>Displays video controls such as play, pause, volume, etc.</li>
+                <li><b>autoplay:</b>Automatically start playing the video when the page loads.</li>
+                <li><b>loop:</b>Causes the video to automatically start over from the beginning when it reaches the end.</li>
+                <li><b>preload:</b>Specifies whether the video should be loaded when the page loads (auto, metadata, none).</li>
+            </ul>
+            <pre>
+                <code>
+                    &lt;video width = '630' autoplay loop&gt;
+                    &lt;source src = 'video.mp4' type = 'video/mp4'&gt;
+                    Your browser doesn't support the video tag.
+                </code>
+            </pre>
+        </section>
+
+    </main>
+    <footer>
+        <p>@Copyright All Right Reserved Code With Harry</p>
+    </footer>
+</body>
+</html>
