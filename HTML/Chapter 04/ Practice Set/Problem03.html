@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem - 03</title>
+    <link rel="stylesheet" href="style03.css">
+</head>
+
+<body>
+    <!-- 3. Create an HTML form for a travel website to book a vacation. -->
+    <header>
+        <nav class="navbar">
+            <div class="left-navbar">
+                <a href="#">
+                    <img src="assets/images/travel-agency.webp" alt="Logo">
+                </a>
+            </div>
+            <div class="center-navbar">
+                <a href="#">Home</a>
+                <a href="/visa assistance">Visa Assistance</a>
+                <a href="/tour packages">Tour Packages</a>
+                <a href="/flight ticketing">Flight Ticketing</a>
+                <a href="/umrah designer">Umrah Designer</a>
+            </div>
+            <div class="right-navbar">
+                <a href="#form">
+                    <button>Contact Us</button>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="form-section">
+        <form class="form" action="/submit.php">
+            <!-- text input for name -->
+            <div class="collect-data">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Full Name" required>
+            </div>
+
+            <!-- tel input for phone number  -->
+            <div class="collect-data">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+            </div>
+
+            <!-- email input for email  -->
+            <div class="collect-data">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" placeholder="Email Address" required>
+            </div>
+
+            <!-- Dropdown select input for tour type  -->
+            <div class="collect-data">
+                <label for="tour-type">Tour Type:</label>
+                <select name="tour-type" id="tour-type" required>
+                    <option value="tour-type" selected disabled>Select Type</option>
+                    <option value="tour-type">Domestic</option>
+                    <option value="tour-type">International</option>
+                </select>
+            </div>
+
+            <!-- Dropdown select inptut for no of persons -->
+            <div class="collect-data">
+                <label for="no-persons">No Of Persons:</label>
+                <select name="no-persons" id="no-persons">
+                    <option value="no-persons" disabled selected>Select Persons</option>
+                    <option value="no-persons">Solo</option>
+                    <option value="no-persons">Couple</option>
+                    <option value="no-persons">Family</option>
+                    <option value="no-persons">Group</option>
+                </select>
+            </div>
+
+            <!-- date input for travelling date -->
+            <div class="collect-data">
+                <label for="date">Travelling Date:</label>
+                <input type="date" class="date" id="date" required>
+            </div>
+
+            <!-- radio for visa processed  -->
+            <div class="collect-data" id="visa-processed">
+                <input type="radio" id="yes" name="visa" value="Yes">
+                <label for="yes">Yes</label>
+
+                <input type="radio" name="visa" id="no" value="no">
+                <label for="no">NO</label>
+            </div>
+
+            <!-- textarea for any detailed message or comment  -->
+            <div class="collect-data">
+                <label for="textarea">Write Your Message</label>
+                <textarea name="textarea" class="textarea"></textarea>
+            </div>
+
+            <!-- submit button for data submit to backend  -->
+            <button class="submit">Submit Now</button>
+
+
+
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

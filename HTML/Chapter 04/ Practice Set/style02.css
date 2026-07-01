@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: white;
+}
+
+header{
+    top: 0;
+    position: sticky;
+}
+
+.yt-logo{
+    width: 100px;
+}
+
+.left-navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex: 0;
+}
+
+.center-navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* gap: 10px; */
+    flex: 1;
+}
+
+.right-navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    flex: 0;
+}
+
+/* button stylling  */
+button {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.mic{
+    margin-left: 10px;
+}
+
+.search{
+    border: none;
+    max-width: 40%;
+    box-shadow: 1px 1px 4px 1px #E6E6E6;
+    padding: 9px 9px 9px 20px; 
+    border-radius: 20px 0px 0px 20px;
+    flex: 1;
+}
+
+.search-button{
+    border-radius: 0px 20px 20px 0px;
+
+}
+
+.home-layout{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 12vh;
+    height: 100vh;
+    padding: 8px 16px;
+    gap: 20px;
+    position: fixed;
+    top: 60px;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.video-body{
+    padding: 30px;
+    margin-left: 80px;
+}
+
+video{
+    width: 290px;
+    height: auto;
+    border-radius: 20px;
+}
+
+iframe{
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+}

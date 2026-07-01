@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Navbar stylling */
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    position: sticky;
+    top: 0;
+    background:white;
+    z-index:100;
+}
+
+/* Left nav section and Right nav section */
+.left-section, 
+.right-section
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+/* center nav section  */
+.center-section{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    justify-content: center;  
+}
+
+/* Input grows here  */
+.search{
+    flex: 1;
+    max-width: 600px;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+/* Logo  */
+.logo{
+    width: 90px;
+}
+
+/* Button stylling */
+button{
+    padding: 6px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #f2f2f2;
+}
+
+button:hover{
+    background: #e6e6e6;
+}
+
+/* Layout stylling  */
+.layout{
+    display: flex;
+    justify-content: flex-start;
+}
+
+a{
+    color: rgb(134, 134, 134);
+     padding: 6px 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.aside{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 8px 16px;
+    height: 100vh;
+    position:  fixed;
+    top: 60px;
+    background: #e6e6e6;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+}
+
+.video-card{
+    padding: 20px;
+    width: 25em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+video{
+    border-radius: 10px;
+    width: 80%;
+}
+
+.channel-logo{
+    width: 30px;
+    
+}
+
