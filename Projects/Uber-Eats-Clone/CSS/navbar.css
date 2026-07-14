@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Manrope', sans-serif;
+}
+
+.short-spons {
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    background: #000;
+    font-size: small;
+}
+
+.short-spons01 {
+    color: #06C067;
+}
+
+/* navbar stylling */
+nav {
+    display: flex;
+    box-shadow: 0px 0px 1px 1px #E5FDF2;
+    max-width: 1550px;
+    padding: 15px 40px;
+    margin: auto;
+    align-items: center;
+}
+
+/* left navbar section  */
+.left-navbar {
+    display: flex;
+    flex: 0;
+}
+
+/* logo creating */
+.logo {
+    display: flex;
+    align-items: center;
+    /* margin-left: 7em; */
+}
+
+/* logo design  */
+.logo-design {
+    /* line-height: 1; */
+    font-weight: 800;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 8px;
+    border-radius: 10px;
+
+    background: #000;
+    color: #06C067;
+}
+
+/* logo first name  */
+.logo-first-name {
+    font-size: 1.4em;
+    font-weight: 800;
+    margin-left: 10px;
+    color: #000;
+}
+
+/* logo second name  */
+.logo-second-name {
+    font-size: 1.4em;
+    font-weight: 800;
+    color: #06C067;
+}
+
+/* logo third name  */
+.logo-third-name {
+    font-size: 10px;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-left: 5px;
+    color: black;
+}
+
+/* center navbar section  */
+.center-navbar {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+
+}
+
+/* right navbar section  */
+.right-navbar {
+    display: flex;
+    flex: 0;
+    align-items: center;
+    justify-content: center;
+    /* margin-right: 7em; */
+    gap: 2em;
+
+}
+
+.login,
+.signin {
+    display: inline-flex;
+    font-weight: 600;
+    background: #000;
+    color: white;
+
+    padding: 10px 22px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    transition: 0.3s ease;
+}
+
+.signin {
+    background-color: #06C067;
+}
+
+.login:hover {
+    background-color: #E5FDF2;
+    color: black;
+    box-shadow: 0 0 1px 1px #06C067;
+}
+
+.signin:hover {
+    background-color: #E5FDF2;
+    color: black;
+    box-shadow: 0 0 1px 1px #06C067;
+}
+
+.center-navbar a {
+    color: black;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+.center-navbar a:hover {
+    color: #06C067;
+}
+
+
+/* Responsive design for mobile  */
+@media (max-width: 767px) {
+    nav{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .center-navbar{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .right-navbar{
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .login,
+    .signin{
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .short-spons{
+        font-size: 12px;
+    }
+}
+
+
+/* Responsive design for tablet  */
+@media (min-width: 767px) and (max-width:1024px) {
+    nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .center-navbar{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+

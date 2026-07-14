@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Monrope' sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5em;
+    background-color: #f2f9f6;
+}
+
+.register-login{
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 
+    /* dark shadow (bottom-right) */
+    10px 10px 20px rgba(165, 214, 167, 0.3),
+    -10px -10px 20px #ffffff;
+    border-radius: 20px;
+    gap: 30px;
+    color: #1c1c1c;
+
+}
+
+h1{
+    padding: 10px;
+
+}
+
+input{
+    width: 320px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    box-shadow:
+    /* dark shadow (bottom-right) */
+     6px 6px 10px rgba(165, 214, 167, 0.2),
+    /*white shadow (top-left) */
+     -6px -6px 10px #ffffff;
+    background: #f2f9f6;
+    border: none;
+    font-weight: 550;
+    transition: all 0.3s ease;
+}
+
+input:focus{
+    box-shadow: 
+    inset 5px 5px 0 rgba(165, 214, 167, 0.3),
+    inset -5px -5px 0 #ffffff;
+    border: none;
+    outline: none;
+}
+
+.privacy{
+    display: flex;
+    gap: 10px;
+}
+
+#privacy-policy{
+    width: fit-content;
+    box-shadow: none;
+}
+
+button{
+    background-color: #00b174;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 30px;
+    cursor: pointer;
+    font-weight: 550;
+    box-shadow:
+    /* Dark shadow (bottom-right) */
+    5px 5px 10px rgba(0, 0, 0, 0.15),
+    /* white shadow (top-left) */
+    -5px -5px 10px rgba(255, 255, 255, 0.4);
+    transition: all 0.2s ease; /* click smooth */
+}
+
+button:active{
+    /* ander ki taraf dhusa hua */
+    box-shadow: 
+    inset 3px 3px 0px rgba(0, 0, 0, 0.15),
+    inset -3px -3px 0px rgba(255, 255, 255, 0.4);
+    transform: scale(0.98);
+}
+
+p{
+    color: #1c1c1c;
+}
+
+a{
+    color: #1c1c1c;
+}
+
+a:hover{
+    color: #00b174;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List your restaurant - Uber Eats Pakistan</title>
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/footer.css">
+    <link rel="stylesheet" href="/CSS/restaurant list.css">
+
+    <!-- font family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p class="short-spons"> <span class="short-spons01"> &bull; Limited founders' spots open</span>—50% off first 5
+            orders for early sign-ups. Pre-register →</p>
+        <nav>
+            <div class="left-navbar">
+                <a href="#" class="logo">
+                    <span class="logo-design">UE</span>
+                    <span class="logo-first-name">Uber</span>
+                    <span class="logo-second-name">Eats</span>
+                    <span class="logo-third-name">Pakistan</span>
+                </a>
+            </div>
+            <ul class="center-navbar">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Pages/restaurant listing.html">Restaurant Listing</a></li>
+                <li><a href="/Pages/restaurant details.html">Restaurant Details</a></li>
+                <li><a href="/Pages/checkout.html">Checkout</a></li>
+                <li><a href="/Pages/order success.html">Order Success</a></li>
+            </ul>
+            <!-- <div class="right-navbar">
+                <a class="login" href="Pages/login.html">Login</a>
+                <a class="signin" href="Pages/signup.html">Sign Up </a>
+            </div> -->
+        </nav>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="list-your-restaurant">
+                <form class="list-your-restaurant-container">
+                    <div>
+                        <label for="name">Restaurant name <span>*</span></label>
+                        <input type="text" id="name" class="collect-data" placeholder="Restaurant Name" required>
+                    </div>
+                    <div>
+                        <label for="phone">Restaurant Phone <span>*</span></label>
+                        <input type="tel" id="phone" class="collect-data" placeholder="Phone Number" required>
+                    </div>
+                    <div>
+                        <label for="manager">Manager Name <span>*</span></label>
+                        <input type="text" id="manager" class="collect-data" placeholder="Manager Name" required>
+                    </div>
+                    <div>
+                        <label for="manager-contact">Manager contact <span>*</span></label>
+                        <input type="tel" id="manager-contact" class="collect-data" placeholder="Manager Phone Number" required>
+                    </div>
+                    <div>
+                        <label for="email">Email <span>*</span></label>
+                        <input type="email" id="email" class="collect-data" placeholder="Email">
+                    </div>
+
+                    <div>
+                        <label for="country">Country <span>*</span></label>
+                        <select id="country" class="collect-data">
+                            <option value="Select Country" disabled selected>Select Country</option>
+                            <option value="pakistan">Pakistan</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Saudi Arbia">Saudi Arbia</option>
+                            <option value="United Arab Emirates">United Arab Emirates</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="iran">Iran</option>
+                            <option value="india">India</option>
+                            <option value="china">China</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="state">State <span>*</span></label>
+                        <select id="state" class="collect-data">
+                            <option value="select state" selected disabled>Select State</option>
+                            <option value="sindh">Sindh</option>
+                            <option value="punjab">Punjab</option>
+                            <option value="KPK">KPK</option>
+                            <option value="balochistan">Balochistan</option>
+                            <option value="AJK">Azad Kashmir</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="latitude">Latitude <span>*</span></label>
+                        <input type="number" id="latitude" class="collect-data" placeholder="40.4505045">
+                    </div>
+                    <div>
+                        <label for="longitude">Longitude <span>*</span></label>
+                        <input type="number" id="longitude" class="collect-data" placeholder="-2.8765432">
+                    </div>
+                    <div>
+                        <label for="map">Find On Map <span>*</span></label>
+                        <input type="text" id="map" class="collect-data" placeholder="Type your address">
+                    </div>
+                    <div>
+                        <label for="delivery">Delivery <span>*</span></label>
+                        <select id="delivery" class="collect-data">
+                            <option value="delivery">Delivery</option>
+                            <option value="pickup">Pickup</option>
+                            <option value="pickup and delivery">Pickup & Delivery</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="cousine">Cousines <span>*</span></label>
+                        <input type="text" id="cousine" class="collect-data" placeholder="Cousines">
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkbox">
+                        <label for="checkbox">Agree to <a href="#">Terms & Service</a> and <a href="#">Privacy Policy</a></label>
+                    </div>
+                    <div class="button">
+                        <button type="submit">List Your Restaurant</button>
+                    </div>
+                </form>
+            </div>
+            <div class="discounted-offers">
+                <div class="discount-offer-for-restaurant">
+                    <p class="trending">Trending</p>
+                    <p class="discount">50% Discount on All New Restaurants</p>
+                    <a class="get-deals" href="#">Get Deals</a>
+                </div>
+                <div class="discount-offer-for-restaurant">
+                    <p class="trending">Trending</p>
+                    <p class="discount">50% Discount on All New Restaurants</p>
+                    <a class="get-deals" href="#">Get Deals</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo-desc">
+                <a href="#" class="footer-logo">
+                    <span class="footer-logo-design">UE</span>
+                    <span class="footer-logo-first-name">Uber</span>
+                    <span class="footer-logo-second-name">Eats</span>
+                    <span class="footer-logo-third-name">Pakistan</span>
+                </a>
+                <p class="footer-container-bio">Pakistan's next food delivery app &mdash; launching 2026 in Karachi, Lahore, Islamabad, Rawalpindia and beyind. Better economics for restaurants. Better choice for customers.</p>
+            </div>
+            <div class="footer-anchor-link">
+                <P class="footer-links-title">Customers</P>
+                <a href="#form" class="footer-link">Pre-register</a>
+                <a href="#how-it-works" class="footer-link">How it works</a>
+                <a href="#cities-causine" class="footer-link">Cities & cuisines</a>
+                <a href="#faq" class="footer-link">FAQ</a>
+            </div>
+            <div class="footer-anchor-link">
+                <p class="footer-links-title">Restaurants</p>
+                <a href="Pages/restaurant listing.html" class="footer-link">List your restaurant</a>
+                <a href="#compare commission" class="footer-link">Compare commissions</a>
+                <a href="#faq" class="footer-link">Partner FAQ</a>
+                <a href="#" class="footer-link">Partner support</a>
+            </div>
+            <div class="footer-anchor-link">
+                <p class="footer-links-title">Company</p>
+                <a href="#" class="footer-link">Contact</a>
+                <a href="#" class="footer-link">Privacy policy</a>
+                <a href="#" class="footer-link">Terms of service</a>
+                <a href="#press" class="footer-link">Press</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p class="copyright-uber-eats">&#64; Uber Eats Pakistan &mdash; ubereats.com.pk</p>
+            <p class="launching-across-pk">Launching in 19 cities across Pakistan, including AJK.</p>
+        </div>
+    </footer>
+</body>
+</html>
