@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #051630;
+    color: white;
+}
+
+h1 {
+    color: orange;
+    justify-self: center;
+    text-align: center;
+    margin-top: 5pc;
+    background-color: #0650be;
+    width: 80%;
+    padding: 1pc;
+    transition: 0.3s ease;
+}
+
+h1:hover{
+    transform: translateY(-5px) scale(1.03);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2pc;
+    padding: 5pc;
+}
+
+section {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 4pc;
+    padding: 2pc;
+    box-shadow: 0 0 1px #0650be;
+    width: 70pc;
+    transition: 0.3s ease;
+}
+
+section:hover{
+    transform: translateY(-5px) scale(1.03);
+}
+
+.technology {
+    width: 50%;
+    min-width: 250px;
+    box-shadow: 0px 0px 10px 0px #0d2e66;
+    padding: 1pc;
+    justify-items: center;
+    transition: 0.3s ease;
+}
+
+.technology:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 0 50px 0 #86b7ff;
+}
+
+h2 {
+    color: orange;
+    font-weight: 600;
+    margin-bottom: 1pc;
+}
+
+h3 {
+    margin-bottom: 1pc;
+}
+
+.tech-purpose {
+    color: grey;
+    margin-bottom: 1pc;
+}
+
+img {
+    width: 100%;
+    max-width: 250px;
+    display: block;
+}
+
+/* second section styling  */
+.stand-for {
+    line-height: 1;
+    font-size: 15px;
+    color: gray;
+    margin-bottom: 2pc;
+}
+
+p {
+    line-height: 1.5;
+    letter-spacing: .5px;
+    margin-bottom: 1pc;
+}
+
+pre {
+    margin: 1pc;
+}
+
+ul {
+    padding: 0 1pc;
+    color: grey;
+}
+
+.red-color {
+    color: red;
+}
+
+.style-sheet-type {
+    margin: 4pc 0;
+}
+
+.blue-color {
+    color: rgba(0, 165, 231, 0.742);
+}
+
+.pink-color {
+    color: pink;
+}
+
+.green-color {
+    color: green;
+
+}
+
+.question-three {
+    margin: 0 1.5pc;
+}
+
+.solution {
+    display: block;
+    margin: 1pc 0pc 4pc 0;
+    padding: 1pc;
+    text-decoration: none;
+    width: fit-content;
+    background-color: #0650be;
+    color: grey;
+}

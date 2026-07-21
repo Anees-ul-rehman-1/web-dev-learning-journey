@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 01 - CSS</title>
+    <meta name="description"
+        content="In this page I'm gonna clone chapter 01 from shardha didi notes pdf with proper styling">
+    <meta name="author" content="Anees Ul Rehman">
+    <link rel="shortcut icon" href="assets/css-logo.png" type="image/png">
+
+    <link rel="stylesheet" href="chapter-01.css">
+</head>
+
+<body>
+    <h1>Chapter 01 &mdash; CSS (Casceding Style Sheet)</h1>
+    <main>
+        <section>
+            <div class="technology">
+                <h2>HTML</h2>
+                <P class="tech-purpose">Structure/Layout</P>
+                <img src="assets/html job.png" alt="HTML job">
+            </div>
+            <div class="technology">
+                <h2>CSS</h2>
+                <p class="tech-purpose">Style</p>
+                <img src="assets/css job.jpg" alt="CSS job">
+            </div>
+            <div class="technology">
+                <h2>JS</h2>
+                <p class="tech-purpose">Logic</p>
+                <img src="assets/js job.png" alt="JS job">
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>CSS <p class="stand-for">(Casceding Style Sheet)</p>
+                </h2>
+                <p>It is a language that is used to describe the style of a document.</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Basic Syntax</h2>
+                <p>Selector</p>
+                <pre>
+                    h1 &lbrace;
+                        color: <span class="red-color">red</span>;
+                       &rbrace; 
+                </pre>
+                <ul>
+                    <li>h1 is a Selector</li>
+                    <li>color is a Property</li>
+                    <li>red is a Value</li>
+                    <li>and in css we use Curly brackets "&lbrace; &rbrace;"</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Including Style</h2>
+                <div class="style-sheet-type">
+                    <h3>01. Inline Style</h3>
+                    <pre>
+                        &lt;h1 style="color: <span class="red-color">red</span>;"&gt;Anees Ul Rehman&lt;/h1&gt;
+                   </pre>
+                    <p class="stand-for">Here we use style in same html inline tag.</p>
+                </div>
+                <div class="style-sheet-type">
+                    <h3>03. &lt;style&gt; tag</h3>
+                    <pre>
+                        &lt;styel&gt;
+                               h1 &lbrace;
+                                   color: <span class="red-color">red</span>;
+                                  &rbrace;
+                        &lt;/style&gt;
+                   </pre>
+                    <p class="stand-for">Here we use style tag in html head.</p>
+                </div>
+                <div class="style-sheet-type">
+                    <h3>03. External Stylesheet</h3>
+                    <pre>
+                    &lt;link rel="stylesheet" href="style.css"&gt;
+                </pre>
+                    <p class="stand-for">In this type we write CSS in seperate file (name.css), and then we link that
+                        file into HTML, head using link tag.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Color Property</h2>
+                <p class="stand-for">Used to set the color of<span class="blue-color"> foreground</span></p>
+                <p>color: <span class="red-color">red</span>;</p>
+                <p>color: <span class="pink-color">pink</span>;</p>
+                <p>color: <span class="blue-color">blue</span>;</p>
+                <p>color: <span class="green-color">green</span>;</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Background Color Property</h2>
+                <p class="stand-for">Used to set the color of<span class="blue-color"> background</span></p>
+                <p>background-color: <span class="red-color">red</span>;</p>
+                <p>background-color: <span class="pink-color">pink</span>;</p>
+                <p>background-color: <span class="blue-color">blue</span>;</p>
+                <p>background-color: <span class="green-color">green</span>;</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Color Systems</h2>
+                <h3>RGB</h3>
+                <p>color: <span class="red-color">rgb(255, 0, 0)</span>;</p>
+                <p>color: <span class="green-color">rgb(0, 255, 0)</span>;</p>
+                <br><br>
+                <h2>Hex (Hexadecimal)</h2>
+                <p>color: <span class="red-color">#ff0000</span>;</p>
+                <p>color: <span class="green-color">#00ff00</span>;</p>
+            </div>
+            <div>
+                <img src="assets/rgb image.png" alt="RGB image">
+                <img src="assets/hexdeicmal color.png" alt="hexdecimal color">
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Selectors</h2>
+                <div>
+                    <h3>Universal Selector</h3>
+                    <pre>
+                        <span class="blue-color">* &lbrace; &rbrace;</span>
+                    </pre>
+                    <p class="stand-for">Here asterisk/star "*" represnts Universal Selector which can style whole page.
+                    </p>
+                </div>
+                <div>
+                    <h3>Element Selector</h3>
+                    <pre>
+                        <span class="blue-color">h1 &lbrace; &rbrace;</span>
+                    </pre>
+                    <p class="stand-for">Here h1 represnts all h1 elements which are present in linked html file.</p>
+                </div>
+                <div>
+                    <h3>Id Selector</h3>
+                    <pre>
+                        <span class="blue-color">#myId &lbrace; &rbrace;</span>
+                    </pre>
+                    <p class="stand-for">Mostly we use id for only one element we don't use same id to multiple elemnts
+                        so id can only style that element.</p>
+                </div>
+                <div>
+                    <h3>Class Selector</h3>
+                    <pre>
+                        <span class="blue-color">.myClass &lbrace; &rbrace;</span>
+                    </pre>
+                    <p class="stand-for">We can use one class to mulitple elements so far which those element has same
+                        class will get style by class.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Practice set</h2>
+                <div>
+                    <p><strong>Q 01:</strong> Create a simple div with an id "box", then add some text content inside
+                        the div and set its background color to blue.</p>
+                    <a href="Practice set/Q-01.html" class="solution" target="_blank">Click here for my solution</a>
+                </div>
+                <div>
+                    <p><strong>Q 02:</strong> Create 3 headings with h1, h2, h3. Give them all a class "heading" & set
+                        color of "heading" to red.</p>
+                    <a href="Practice set/Q-02.html" class="solution" target="_blank">Click here for my solution</a>
+                </div>
+                <div>
+                    <p><strong>Q 03:</strong> Create a button & set its background color to:
+                    <ul class="question-three">
+                        <li>green using css stylesheet</li>
+                        <li>blue using &lt;style&gt; tag</li>
+                        <li>pink using inline style</li>
+                    </ul>
+                    <a href="Practice set/Q-03.html" class="solution" target="_blank">Click here for my solution</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
