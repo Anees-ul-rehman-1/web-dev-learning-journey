@@ -49,23 +49,26 @@ This repository will help me track my growth as a web developer.
 - Ways to add CSS (inline, internal, external)
 - CSS syntax (selector, property, value)
 - Setting up first stylesheet
-
----
-
-## Chapter 1 — Selectors
 - Element selector
 - ID selector
 - Class selector
 - Universal selector
+- color system
+- color property
+
+---
+<!-- 
+## Chapter 1 — Selectors
+
 - Group selector
 - Descendant & child selectors
 - Sibling combinators
 - Attribute selector
 - Pseudo-classes & pseudo-elements
 
----
+--- -->
 
-## Chapter 2 — Colors, Units & Text Styling
+<!-- ## Chapter 2 — Colors, Units & Text Styling
 - Color formats (name, hex, rgb, rgba, hsl)
 - Units (px, %, em, rem, vh, vw)
 - Font properties (family, size, weight, style)
@@ -96,48 +99,7 @@ This repository will help me track my growth as a web developer.
 - justify-content, align-items, align-self
 - flex-direction, flex-wrap
 - flex-grow, flex-shrink, flex-basis
-- Building layouts with Flexbox
-
----
-
-## Chapter 6 — CSS Grid
-- Grid container & grid items
-- grid-template-columns/rows
-- gap, grid-area
-- Placing items on the grid
-- Responsive layouts with Grid
-
----
-
-## Chapter 7 — Specificity & Cascade
-- CSS specificity rules
-- Inline vs id vs class vs element specificity
-- The cascade & inheritance
-- !important
-
----
-
-## Chapter 8 — Transitions, Transforms & Animations
-- transition property
-- transform (translate, rotate, scale, skew)
-- @keyframes animations
-- animation property
-- Hover effects
-
----
-
-## Chapter 9 — Responsive Web Design
-- Media queries
-- Mobile-first vs desktop-first approach
-- Responsive units
-- Building a responsive layout
-
----
-
-## Chapter 10 — Mini Project
-- Building a complete webpage using everything learned
-- Combining Flexbox/Grid with responsive design
-- Practicing real-world styling
+- Building layouts with Flexbox -->
 
 ---
 
@@ -186,18 +148,13 @@ I believe that practicing daily and building projects is the best way to learn w
 ```bash
 Web-Development-Journey/
 │
+├── HTML/
 ├── CSS/
-│   ├── Chapter-0/
 │   ├── Chapter-1/
 │   ├── Chapter-2/
 │   ├── Chapter-3/
 │   ├── Chapter-4/
 │   ├── Chapter-5/
-│   ├── Chapter-6/
-│   ├── Chapter-7/
-│   ├── Chapter-8/
-│   ├── Chapter-9/
-│   ├── Chapter-10/
 │   └── README.md
 ```
 
