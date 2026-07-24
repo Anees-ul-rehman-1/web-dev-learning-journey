@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-08">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In Chapter 02 I'll cover text properties, font-family, units in css">
+    <meta name="author" content="Anees Ul Rehman">
+    <link rel="shortcut icon" href="../Chapter 01/assets/css-logo.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="chapter-02.css">
+    <title>chpater 02 - CSS</title>
+</head>
+
+<body>
+    <h1>Chapter 02 &mdash; CSS (Casceding Style Sheet)</h1>
+    <main>
+        <section>
+            <div class="text-property">
+                <h2>Text Properties</h2>
+                <div class="img">
+                    <img src="assets/CSS-Text-Formatting-Properties2-removebg-preview.png" alt="">
+                </div>
+                <div>
+                    <h3>01. Text Align</h3>
+                    <pre>
+                        <code>
+                            text-align: left / right / center
+                        </code>
+                    </pre>
+                    <p class="short-bio">Here text-align is property. left, right, center is value of alignments</p>
+                </div>
+                <div>
+                    <h3>02. Text Decoration</h3>
+                    <pre>
+                        <code>
+                            text-decoration: underline / overline / line-through
+                        </code>
+                    </pre>
+                    <p class="short-bio">We can add underline, overline, linethrough, using text-deocaration property.
+                        here is another value of text-decoration property that is none when we use anchor link in our
+                        html by default anchor'll have underline so we use text-decoration none value.</p>
+                </div>
+                <div>
+                    <h3>03. Font weight</h3>
+                    <pre>
+                        <code>
+                            font-weight: normal / bold / bolder / lighter
+                            font-weight: 100-900
+                        </code>
+                    </pre>
+                    <p class="short-bio">We use font-weight property to make font bold or light, we can add font-weight
+                        upto 900, start from 100.</p>
+                </div>
+                <div>
+                    <h3>04. line height</h3>
+                    <pre>
+                        <code>
+                            line-height: 2px
+                            line-heiht: 3
+                            line-height: normal
+                        </code>
+                    </pre>
+                    <p class="short-bio">In simple word line height means height of text line like we have height of
+                        line in notebooks same way we can give line height to text if we have paragraph in our page and
+                        we want space between text lines, there we can give line height.</p>
+                </div>
+                <div>
+                    <h3>05. Text Transform</h3>
+                    <pre>
+                        <code>
+                            text-transform: uppercase / lowercase / capitalize / none
+                        </code>
+                    </pre>
+                    <p class="short-bio">If we want any text to fully in uppercase, lowercase, or each words first
+                        letter capitalize we have text transform property for that.</p>
+                </div>
+                <div>
+                    <h3>06. Font Family</h3>
+                    <pre>
+                        <code>
+                            font-family: arial
+                            font-family: arial, roboto, sans-serif
+                        </code>
+                    </pre>
+                    <p class="short-bio">font family means font style, we can add font families, in two ways 1. Specific
+                        font by font names, like arial, , roamn etc. 2. Generic fonts here we can only give one name of
+                        generic font like sans-sefir browser have right to use any font from sans-serif family. </p>
+                </div>
+                <div>
+                    <h3>Types of font families</h3>
+                    <ul>
+                        <li><strong>Generic font families:</strong> Generic font families are determined by font family
+                            properties such as seriefs&mdash;which are decorative strokes on the end of letters&mdash;or
+                            cursive strokes. The generic font family name will specify the attribute that all fonts
+                            within that family share, like serif, sans-serif, or monospace.</li>
+                        <li><strong>Specific font families:</strong> Specific font families are specific fonts with
+                            different styles within the one font family name, such as Arial, Times New Roman, and
+                            Tahoma.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Generic Font Families</h2>
+                    <p>Here is an overview of the generic font families found in many word processing programs:</p>
+                    <ol>
+                        <li><strong>Serif:</strong> Serif fonts are tradional typefaces using characters that have
+                            serifs which are small winged or flared tips exlending off the tips of a letter. Serif fonts
+                            are typically used in printed books, newspapers, and magzines. Some popular serif fonts
+                            include Times New Roman, Garamond, Palatino, and Georgia.</li>
+                        <li><strong>Sans-Serif:</strong> Sans-Serif fonts use characters without serifs and are more
+                            commonly seen in digital formats. A Sans-serif fonts will typically be the default font in
+                            digital word processing programs. Sans-serif fonts include Arial, Helvetica, Verdana,
+                            Trebuchet MS, and Gill Sans.</li>
+                        <li><strong>Cursive:</strong> Cursive fonts use characters that have connective strokes which
+                            give the font a handwritten appearance. Cursive fonts include Comic Sans MS, Adobe Poetica,
+                            Sanvito, and Zapf-Chancery.</li>
+                        <li><strong>Fantasy:</strong> Fantasy fonts are stylized fonts that still maintain the
+                            characteristics of non-cursive, traditional alphabet glyphs. Examples include Cottonwood,
+                            Critter, and Alpha Geometrique.</li>
+                        <li><strong>Monospace</strong> Fonts in the monospace font family have characters that are all
+                            the same width, giving text the appearance of a manual monospaced typewriter. Examples of
+                            monospace fonts include Courier New, Lucida Console, Consolas, and Everson Mono.</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Units in CSS</h2>
+                <div>
+                    <h3>Absolute Units</h3>
+                    <h4>pixels (px)</h4>
+                    <pre>
+                        <code>
+                                96px = 1 inch
+                                font-size: 2px;
+                        </code>
+                    </pre>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Practice set</h2>
+                <div>
+                    <p class="question"><strong>Q1:</strong> Create a headig centred on the page with all of is
+                        capitalized by default.</p>
+                    <a href="practice set/Q-01.html" target="_blank">Click here for check my solution</a>
+                </div>
+                <div>
+                    <p class="question"><strong>Q2:</strong> Set the font family of all the contect in the document to
+                        "Times New Roman".</p>
+                    <a href="practice set/Q-02.html" target="_blank">Click here for check my solution</a>
+                </div>
+                <div>
+                    <p class="question"><strong>Q3:</strong> Create one div inside another div. Set id & text "outer"
+                        for the first one & "inner" for the second one. Set the outer div text size to 25px & inner div
+                        text size to 10px.</p>
+                    <a href="practice set/Q-03.html" target="_blank">Click here for check my solution</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

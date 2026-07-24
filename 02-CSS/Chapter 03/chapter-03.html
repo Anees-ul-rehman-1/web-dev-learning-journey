@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In  this chapter I'm gonna learn box model in CSS">
+    <meta name="author" content="Anees Ul Rehman">
+    <link rel="shortcut icon" href="../Chapter 01/assets/css-logo.png" type="image/png">
+    <link rel="stylesheet" href="chapter-03.css">
+
+    <title>Chapter 03 - CSS</title>
+</head>
+
+<body>
+    <main>
+        <h1>Chapter 03 &mdash; CSS (Casceding Style Sheet)</h1>
+        <section>
+            <div class="box-model">
+                <div>
+                    <h2>Box Model in CSS</h2>
+                    <ul>
+                        <li>Height</li>
+                        <li>device-width</li>
+                        <li>Border</li>
+                        <li>Padding</li>
+                        <li>Margin</li>
+                    </ul>
+                </div>
+                <div>
+                    <img src="assets/box model.png" alt="Box model">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="box-model">
+                <div>
+                    <h2>Height</h2>
+                    <pre>
+                        <code>
+                            div {
+                                height: 50px;
+                            }
+                        </code>
+                    </pre>
+                    <p class="short-bio">By default, it sets the content area <span class="blue-color">height</span> of the element</p>
+                </div>
+                <div>
+                    <img class="height-image" src="assets/height-box.png" alt="Height in Box Model">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="box-model">
+                <div>
+                    <h2>Width</h2>
+                    <pre>
+                        <code>
+                            div {
+                                width: 50px;
+                            }
+                        </code>
+                    </pre>
+                    <p class="short-bio">By default, it sets the content area <span class="blue-color">width</span> of the element</p>
+                </div>
+                <div>
+                    <img class="height-image" src="assets/width-box.png" alt="Height in Box Model">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="box-model">
+                <div>
+                    <h2>Border</h2>
+                    <pre>
+                        <code>
+                            div {
+                                border-width: 2px;
+                                border-style: solid / dotted / dashed;
+                                border-color: black;
+                            }
+                        </code>
+                    </pre>
+                    <h3>Shorthand</h3>
+                    <pre>
+                        <code>
+                            div {
+                                border: 2px solid black;
+                            }
+                        </code>
+                    </pre>
+                    <p class="short-bio">Used to set an element's <span class="blue-color">border</span></p>
+                </div>
+                <div>
+                    <img class="border-image" src="assets/border-box.png" alt="border of the box model">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Border Radius</h2>
+                <pre>
+                    <code>
+                        div {
+                            border-radius: 10px;
+                            border-radius: 50%
+                        }
+                    </code>
+                </pre>
+                <p class="short-bio">Used to <span class="blue-color">round the corners</span> of an element's outer border edge</p>
+            </div>
+        </section>
+        <section>
+            <div class="box-model">
+                <div>
+                    <h2>Padding</h2>
+                    <pre>
+                        <code>
+                            div {
+                                padding-top: 20px;
+                                padding-right: 20px;
+                                padding-bottom: 20px;
+                                padding-left: 20px;
+                            }
+                        </code>
+                    </pre>
+                    <h3>Shorthand</h3>
+                    <pre>
+                        <code>
+                            div {
+                                padding: 20px;
+
+                                padding: 10px      20px      5px       10px;
+                                         (top)     (right)  (bottom)   (left)  &rarr; clockwise 
+                            }
+                        </code>
+                    </pre>
+                    <p class="short-bio">Used to set an element's <span class="blue-color">space</span> inside</p>
+                </div>
+                <div>
+                    <img class="height-image" src="assets/padding-box.png" alt="border of the box model">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="box-model">
+                <div>
+                    <h2>Margin</h2>
+                    <pre>
+                        <code>
+                            div {
+                                margin-top: 20px;
+                                margin-right: 20px;
+                                margin-bottom: 20px;
+                                margin-left: 20px;
+                            }
+                        </code>
+                    </pre>
+                    <h3>Shorthand</h3>
+                    <pre>
+                        <code>
+                            div {
+                                margin: 20px;
+
+                                margin: 10px      20px      5px       10px;
+                                         (top)     (right)  (bottom)   (left)  &rarr; clockwise 
+                            }
+                        </code>
+                    </pre>
+                    <p class="short-bio">Used to set an element's <span class="blue-color">space</span> outside</p>
+                </div>
+                <div>
+                    <img class="height-image" src="assets/margin-box.png" alt="border of the box model">
+                </div>
+            </div>
+        </section>
+        <section class="practice-section">
+            <div>
+                <h2>Practice Set</h2>
+                <p class="question"><strong>Q1:</strong> Create a div with height & width of 100px. Set its background color to green & the border radius to 50%.</p>
+                <a href="practice set/Q-01.html">Click here to check my solution</a>
+                <p class="question"><strong>Q2:</strong> Create the following navbar.</p>
+                <img class="question-image" src="assets/navbar practice.png" alt="navbar clone">
+                <a href="practice set/Q-02.html">Click here to check my solution</a>
+            </div>
+        </section>
+        
+    </main>
+</body>
+
+</html>

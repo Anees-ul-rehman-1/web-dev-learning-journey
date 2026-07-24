@@ -5,24 +5,17 @@
 }
 
 body {
-    font-family: sans-serif;
     background-color: #051630;
     color: white;
 }
 
 h1 {
-    color: orange;
-    justify-self: center;
-    text-align: center;
-    margin-top: 5pc;
     background-color: #0650be;
-    width: 80%;
+    width: 100%;
     padding: 1pc;
+    color: orange;
+    text-align: center;
     transition: 0.3s ease;
-}
-
-h1:hover{
-    transform: translateY(-5px) scale(1.03);
 }
 
 main {
@@ -44,8 +37,9 @@ section {
     transition: 0.3s ease;
 }
 
-section:hover{
+section:hover {
     transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 0 10px #0650be;
 }
 
 .technology {
@@ -65,7 +59,7 @@ section:hover{
 h2 {
     color: orange;
     font-weight: 600;
-    margin-bottom: 1pc;
+    margin-bottom: 2pc;
 }
 
 h3 {
@@ -81,6 +75,7 @@ img {
     width: 100%;
     max-width: 250px;
     display: block;
+    transition: 0.3s ease;
 }
 
 /* second section styling  */

@@ -1,0 +1,51 @@
+/* box width height border border shorthand  border-radius*/
+div{
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    border-width: 2px;
+    border-style: solid;
+    border-style: dotted;
+    border-style: dashed;
+    border-style: double;
+    border-color: blue;
+    border: 3px dashed rgb(123, 0, 255);
+    text-align: right;
+}
+
+h1{
+    width: 200px;
+    height: 50px;
+    background-color: aquamarine;
+    border-width: 5px;
+    border-style: solid;
+    border-style: dotted;
+    border-color: plum;
+    text-align: center;
+    /* border shorthand */
+    border: 2px solid rgb(35, 65, 65) ;
+
+    border-radius: 8px;
+    border-radius: 30%;
+}
+
+/* padding margin */
+p{
+    color: white;
+    background-color: black;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding: 100px;
+    padding: 10px 200px 30px 40px ;
+
+    margin-top: 40px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    margin-left: 100px;
+    /* margin: 100px; */
+    margin: 40px 50px 70px 100px;
+}
+
+

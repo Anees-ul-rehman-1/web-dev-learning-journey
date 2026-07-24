@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Quesion 01 styling  */
+.question-01 {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50%;
+    justify-self: center;
+}
+
+/* Question 02 styling  */
+nav{
+    background-color: #0f1111;
+    height: 60px;
+}
+
+a{  
+    margin-right: 200px;
+    text-decoration: none;
+    color: white;
+}
+
+.logo{
+    color: #f08804;
+    font-size: 25px;
+}
+
+button{
+    background-color: #f08804;
+}
+
+/* Question 03 styling  */
+.traffic{
+    display: grid;
+    grid-template-columns: repeat(1, fr);
+    width: 80px;
+    height: 250px;
+    background-color: black;
+    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.red{
+    background-color: red;
+}
+
+.yellow{
+    background-color: yellow;
+}
+
+.green{
+    background-color: green;
+}
+
+.steel-rod{
+    justify-self: center;
+    width: 10px;
+    height: 250px;
+    background-color: black;
+}
+
+.block{
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    justify-self: center;
+}
+
+.road{
+    height: 12pc;
+    background-color: #3A3B3C;
+}

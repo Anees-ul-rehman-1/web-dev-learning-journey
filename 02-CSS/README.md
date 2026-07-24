@@ -43,7 +43,7 @@ This repository will help me track my growth as a web developer.
 
 # 📚 Topics Covered
 
-## Chapter 0 — Introduction to CSS
+## Chapter 01 — Introduction to CSS
 - What is CSS?
 - Why CSS is important
 - Ways to add CSS (inline, internal, external)
@@ -57,26 +57,38 @@ This repository will help me track my growth as a web developer.
 - color property
 
 ---
-<!-- 
-## Chapter 1 — Selectors
 
-- Group selector
-- Descendant & child selectors
-- Sibling combinators
-- Attribute selector
-- Pseudo-classes & pseudo-elements
-
---- -->
-
-<!-- ## Chapter 2 — Colors, Units & Text Styling
-- Color formats (name, hex, rgb, rgba, hsl)
-- Units (px, %, em, rem, vh, vw)
-- Font properties (family, size, weight, style)
-- Text properties (align, decoration, transform, spacing)
-- Google Fonts
+##  Chapter 02 - Text Properties and Units in CSS
+- What is Text Properties?
+- text align
+- text decoration
+- font weight
+- font family
+- line height
+- text transform
+- Units in CSS
+- text alignment
+- text underline, overline, line thorugh
+- text uppercase, lowercase, capitalized
+- used font families
+- set font size etc
 
 ---
 
+##  Chapter 03 - Box Model in CSS
+- Box height
+- Box Width
+- Box Border
+- Box Padding
+- Box Margin
+- Set height in pixels
+- Width using pixels and percentage
+- Box border seperate and shorthand both
+- Box padding seperate and shorthand
+- Box margin seperately and shorthand both
+
+
+<!--
 ## Chapter 3 — Box Model
 - Content, padding, border, margin
 - Box-sizing property

@@ -1,0 +1,86 @@
+/* *{
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+} */
+
+
+/* text align property values  */
+h1,
+p{
+    /* text-align: right; */
+    text-align: center;
+    /* text-align: left; */
+    /* ye ab as p ke parent se text align ki value inherit means wahan jo hogi wo lega  */
+    /* text-align: inherit; */
+    /* ye ab kisi ka bhi text align nhi lege default kar dega */
+    /* text-align: initial; */
+}
+
+/* text decoration property values  */
+h2{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration:  wheat underline;
+    text-decoration: wavy red underline;
+    text-decoration: double overline;
+    text-decoration: dotted underline;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* font weight property values  */
+h1,
+h2,
+p,
+a{
+    font-weight: normal;
+    font-weight: bold;
+    font-weight: bolder;
+    font-weight: lighter;
+    font-weight: 100;
+    font-weight: 400;
+    font-weight: 900;
+}
+
+
+/* fon family property values  */
+body{
+    /* font-family: Arial; */
+
+    /* fallback machenism  on font family */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: sans-serif;
+}
+
+/* units in css  */
+
+/* absolute units  */
+body{
+    /* font size in pixels  */
+    /* font-size: 10px; */
+    /* font size in inch  */
+    /* font-size: 1in; */ 
+}
+
+/* line height property  */
+body{
+    /* line-height: 1.5; */
+    /* line-height: 10px; */
+    /* line-height: 1in; */
+}
+ 
+
+/* text transform property  */
+body{
+    /* text-transform: capitalize; */
+    /* text-transform:lowercase */
+    text-transform: uppercase;
+}
+
+ 
