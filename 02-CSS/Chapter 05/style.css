@@ -1,0 +1,67 @@
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    /* padding: 10px; */
+    font-size: 10px;
+}
+
+.box2{
+    width: 30%;
+    height: 20%;
+    background-color: yellow;
+    margin-left: 40%;
+    /* 2 times of parent size  */
+    font-size: .5em;
+    font-size: 2em;
+} 
+
+.box{
+    width: 100%;
+    max-width: 100px;
+    height: 15vh;
+    background-color: aqua;
+    border: 2px solid;
+    margin: 1rem;
+    display: inline-block;
+}
+
+.box3{
+    position: static;
+    /* never tio bottom left right position will work in static  */
+    top: 1rem;
+    right: 3rem;
+    bottom: 2rem;
+    left: 5rem;
+}
+
+.box4{
+    position: relative;
+    top: 10rem;
+    /* right: 2rem; */
+    left: 2rem;
+    /* bottom: 10rem; */
+}
+
+.box5{
+    position: absolute;
+    /* top: 2rem; */
+    /* left: 1rem; */
+    bottom: 2rem;
+    right: 3rem;
+
+}
+
+.box6{
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+}
+
+.box7{
+    color: white;
+    font-size: 2rem;
+    background-image: url(assets/cat.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

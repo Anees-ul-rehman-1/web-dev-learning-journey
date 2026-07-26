@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background-color: #051630;
+}
+
+h1{
+    color: orange;
+    background-color: #0650BE;
+    text-align: center;
+    padding: 1pc;
+    margin-bottom: 2pc;
+}
+
+h2{
+    color: orange;
+    margin-bottom: 1pc;
+    width: 100%;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 3pc;
+}
+
+section{
+    display: flex;
+    box-shadow: 0 0 1px #0650BE;
+    width: 70pc;
+    align-self: center;
+    padding: 2pc;
+    transition: 0.3s ease;
+}
+
+section:hover{
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 0 10px #0650BE;
+}
+
+.short-bio{
+    color: grey;
+    margin-bottom: 1pc;
+}
+
+.blue-color{
+    color: #0650BE;
+}
+
+ul{
+    padding: 0 1pc;
+}
+
+li{
+    margin-bottom: 1pc;
+}
+
+
+pre{
+    margin: 3pc;
+}
+
+.question{
+    margin-bottom: 1pc;
+}
+
+a{
+    width: fit-content;
+    display: block;
+    text-decoration: none;
+    color: grey;
+    background-color: #0650BE;
+    padding: 1pc;
+    margin-bottom: 3pc;
+}
+
+
+.question-section{
+    margin-bottom: 5pc;
+}

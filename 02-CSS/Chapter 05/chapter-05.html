@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In this Chapter I'll cover relative units and background image">
+    <meta name="author" content="Anees Ul Rehman">
+    <link rel="shortcut icon" href="../Chapter 01/assets/css-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="chapter-05.css">
+    <title>Chapter 05 - CSS</title>
+</head>
+
+<body>
+    <main>
+        <h1>Chapter 05 &mdash; CSS (Casceding Style Sheet)</h1>
+        <section>
+            <div>
+                <h2>Relative Units in CSS</h2>
+                <pre>
+                    <code>
+                        div {
+                            width: 100%;
+                            max-width: 15em;
+                            max-width: 20rem;
+                        }
+                    </code>
+                </pre>
+                <p class="short-bio">Industry mostly use Relative for layout and font etc</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Percentage (%)</h2>
+                <pre>
+                    <code>
+                        div {
+                            width: 33%;
+                            margin-left: 50%;
+                            }
+                    </code>
+                </pre>
+                <p class="short-bio">It is often used to define a <span class="blue-color">size as relative to an
+                        element's parent</span>object.</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Em</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Unit</th>
+                            <th>Relative to</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>em</td>
+                            <td>Font size of the parent, in the case of typographical properties like <span class="blue-colo">font-size</span>, and font size of the element itself, in the case of other properties like <span class="blue-color">width</span>.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Rem (Root Em)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Unit</th>
+                            <th>Relative to</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>rem</td>
+                            <td>Font size of the root element.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Others</h2>
+                <p>vh: relative to 1% viewport height</p>
+                <p>vw: relative to 1% viewport width</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Position</h2>
+                <pre>
+                    <code>
+                        div {
+                            position: static;
+                            position: relative;
+                            position: absolute;
+                            position: fixed;
+                            }
+                    </code>
+                </pre>
+                <p class="short-bio">The position CSS properly sets <span class="blue-color">how an element is positioned in a document.</span></p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Position</h2>
+                <ul>
+                    <li>Static &mdash; default position (The top, right, bottom, left, and z-index properties have no effect)</li>
+                    <li>relative &mdash; element is relative to itself. (The top, right, bottom, left, and z-index will work)</li>
+                    <li>absolute &mdash; positioned relative to its closest positioned acnestor. (removed from the flow)</li>
+                    <li>fixed &mdash; positioned relative to browser. (removed from flow)</li>
+                    <li>sticky &mdash; Positioned based on user's scroll position</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>z-index</h2>
+                <pre>
+                    <code>
+                        div {
+                            z-index: auto (0)
+                            z-index: 1 / 2 / ...
+                            z-index: -1 / -2 / ....
+                        }
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Background Image</h2>
+                <pre>
+                    <code>
+                        div {
+                            background-image: url("image.jpeg");
+                        }
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Background Size</h2>
+                <pre>
+                    <code>
+                        div {
+                            background-size: cover / contain / auto;
+                        }
+                    </code>
+                </pre>
+            </div>
+        </section>
+        <section class="question-section">
+            <div>
+                <h2>Practice Set</h2>
+                <p>Q: Create the following layout the given html.
+                    <ul>
+                        <li>Give the div a height, width & some background image.</li>
+                        <li>Use the appropriate position property for the div element to place it at the right end of the page. (The div should not move even on scroll)</li>
+                        <li>Use z-index to place the div on top of the page.</li>
+                    </ul>
+                    <pre>
+                        <code>
+                            &lt;p&gt;lorem*5&lt;/p&gt;
+                            &lt;div&gt; Love Nature&lt;/div&gt;
+                            &lt;p&gt;lorem*5&lt;/p&gt;
+                        </code>
+                    </pre>
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

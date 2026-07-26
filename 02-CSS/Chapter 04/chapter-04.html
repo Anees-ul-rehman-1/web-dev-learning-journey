@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In this chapter I'm gonna learn display properties">
+    <meta name="author" content="Anees Ul Rehman">
+    <link rel="shortcut icon" href="../Chapter 01/assets/css-logo.png" type="image/png">
+    <link rel="stylesheet" href="chapter-04.css">
+
+    <title>Chapter 04</title>
+</head>
+
+<body>
+    <main>
+        <h1>Chapter 04 &mdash; CSS (Casceding Style Sheet)</h1>
+        <section>
+            <div>
+                <h2>Display Property</h2>
+                <p class="short-bio">display: inline / block / inline-bock / none</p>
+                <ul>
+                    <li><span class="blue-color">inline</span> - Takes only the space required by the element. (no
+                        margin/padding).</li>
+                    <li><span class="blue-color">block</span> - Takes full space available in width.</li>
+                    <li><span class="blue-color">inline-block</span> - Similar to inline but we can set margin &
+                        padding.</li>
+                    <li><span class="blue-color">none</span> - To remove element from document flow.</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Visibility</h2>
+                <pre>
+                    <code>
+                        div {
+                            Visibility: hidden;
+                        }
+                    </code>
+                </pre>
+                <p class="short-bio"><span class="blue-color">Note:</span> When visibility is set to none, space for the element is reserved. But for display set to none, no space is reserved or blocked for the element.</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Alpha Channel</h2>
+                <pre>
+                    <code>
+                        div {
+                            color: rgba(255, 0, 0, 0.5);
+                            
+                            color: rgba(255, 0, 0, 1);
+                        }
+                    </code>
+                </pre>
+                <p class="short-bio"><span class="blue-color">RGBA Stand For:</span> Red Green Blue Alpha, here alpha means opacity if we set any color using rgb color system and we want that color opacity there we use RGBA system.</p>
+            </div>
+        </section>
+        <Section class="question-section">
+            <div>
+                <p class="question">Q1: Create a webpage layout with a header, a footer & a content area containing 3 divs. Set the height & width of divs to 100px. (add the previous navbar in the header)</p>
+                <a href="practice set/Q-01.html" target="_blank">Click here for check my solution</a>
+
+                <p class="question">Q2: Add borders to all the divs.</p>
+                <a href="practice set/Q-02.html" target="_blank">Click here for check my solution</a>
+
+                <p class="question">Q3: Add a different background color to each div with an opacity of 0.5</p>
+                <a href="practice set/Q-03.html" target="_blank">Click here for check my solution</a>
+
+                <p class="question">Q4: Give the content area an appropriate height.</p>
+                <a href="practice set/Q-04.html" target="_blank">Click here for check my solution</a>
+            </div>
+        </Section>
+    </main>
+</body>
+
+</html>
