@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In this Chapter I have covered flex box and its properties">
+    <meta name="author" content="Anees Ul Rehman">
+    <link rel="shortcut icon" href="/Chapter 01/assets/css-logo.png">
+    <link rel="stylesheet" href="chapter-06.css">
+
+    <title>Chapter 05 - CSS</title>
+</head>
+
+<body>
+    <main>
+        <h1>Chapter 06 &mdash; CSS (Cascading Style Sheet)</h1>
+        <section>
+            <div>
+                <h2 class="define">Flexbox</h2>
+                <p class="blue-color">Flexible Box Layout</p>
+                <p class="describe">It is one-dimensional layout method for arranging items in rows or columns.</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>The Flex Model</h2>
+                <div class="image">
+                    <img src="assets/Flex-Model-Architecture.png" alt="Flex Model">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Flexbox Direction</h2>
+                <pre>
+                <code>
+                    div {
+                     display: flex;
+                     flex-direction: row;  <span class="blue-color">/* (default) */</span>
+                     flex-direction: row-reverse;
+                     flex-direction: column;
+                     flex-direction: column-reverse;
+                    }                    
+                </code>
+                </pre>
+                <p class="short-bio">It sets how flex items are placed in the flex container, along which axis and
+                    directioin.</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2 class="define">Flex Properties</h2>
+                <p class="blue-color">for Flex Contianer</p>
+                <ul>
+                    <li><span class="blue-color">justify-content</span> : alignment along the main axis. <p class="justify-content-values">flex-start / flex-end / center / space-evenly / space-around / space-between</p></li>
+                    <li><span class="blue-color">flex-wrap</span> : nowrap / wrap / wrap-reverse</li>
+                    <li><span class="blue-color">align-items</span> : alignment along the cross axis</li>
+                    <li><span class="blue-color">align-content</span> : alignment of space between & around the content along cross-axis</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2 class="define">Flex Properties</h2>
+                <p class="blue-color">for Flex Item</p>
+                <ul>
+                    <li><span class="blue-color">align-self</span> : alignment of individual along the cross axis.</p></li>
+                    <li><span class="blue-color">flex-grow</span> : how much a flex item will grow relative to the reset of the flex items if space is available</li>
+                    <li><span class="blue-color">flex-shrink</span> : how much a flex item will shrink relatice to the rest of the flex items if space is available</li>
+                </ul>
+            </div>
+        </section>
+        <section class="question-section">
+            <div>
+                <h2>Practice Set</h2>
+                <p class="question">Q01:Create a navbar with 4 options in the from of anchor tags inside list items. Now, use flexbox to place them all spaced equally in a single line.</p>
+                <a href="practice set/Q-01.html" target="_blank">Click here to check my solution</a>
+
+                <p class="question">Q02: Use Flexbox to center one div inside another div.</p>
+                <a href="practice set/Q-02.html" target="_blank">Click here to check my solution</a>
+
+                <p class="question">Q03: Which has higher priority align-items or align-self</p>
+                <a href="practice set/Q-03.html" target="_blank">Click here to check my solution</a>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

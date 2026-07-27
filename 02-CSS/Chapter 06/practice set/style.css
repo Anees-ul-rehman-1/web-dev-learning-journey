@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Question one  */
+ul {
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style-type: none;
+}
+
+
+/* Question two  */
+
+main {
+    display: flex;
+    min-height: 95vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70vw;
+    min-height: 50vh;
+    box-shadow: 0 0 2px;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.box {
+    display: flex;
+    width: 20%;
+    height: 15vh;
+    flex-wrap: wrap;
+    box-shadow: 0 0 1px;
+    justify-content: center;
+    align-items: center;
+    /* flex-grow: 1; */
+}
+
+/* Question three  */
+.div-container {
+    display: flex;
+    width: 70vw;
+    height: 50vh;
+    box-shadow: 0 0 1px;
+    justify-content: center;
+    align-items: center;
+    background-color: saddlebrown;
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    align-self: center;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 0 1px;
+
+    background-color: #fff;
+
+}
+
+.div1 {
+    background-color: black;
+}
+
+.div2 {
+    background-color: aqua;
+}
+
+.div3 {
+    background-color: yellow;
+}
+
+.div4 {
+    background-color: aquamarine;
+}
+
+.div5 {
+    background-color:bisque;
+}
+
+.div6 {
+    background-color: #fff;
+}
+
+.div7 {
+    background-color:blue;
+}
+
+.div8 {
+    background-color:blueviolet;
+}
+
+.div9 {
+    background-color:blanchedalmond
+}
+
+.div10 {
+    background-color:darkorchid;
+}
+
+.div11 {
+    background-color: greenyellow;
+}
+
+.div12 {
+    background-color: darkorange;
+}
+
+.div13 {
+    background-color: rgb(0, 0, 0);
+}
+
+.div14 {
+    background-color: firebrick;
+}
+
+.div15 {
+    background-color: black;
+}
+
+footer{
+    text-align: center;
+    padding-bottom: 3rem;
+}
