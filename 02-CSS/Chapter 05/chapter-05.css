@@ -29,11 +29,11 @@ section {
     display: flex;
     width: 70vw;
     padding: 2rem;
-    box-shadow: 0 0 2px #0650BE;
+    box-shadow: 0 0 5px #0650BE;
     transition: 0.3s ease;
 }
 
-section:hover{
+section:hover {
     transform: translateY(-5px) scale(1.03);
     box-shadow: 0 0 40px #0650BE;
 }
@@ -77,6 +77,14 @@ li {
     margin-bottom: 1rem;
 }
 
-.question-section{
+.question-section {
     margin-bottom: 3rem;
+}
+
+a {
+    background-color: #0650BE;
+    color: grey;
+    width: fit-content;
+    text-decoration: none;
+    padding: 1rem;
 }
