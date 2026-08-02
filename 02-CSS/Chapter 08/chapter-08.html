@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In this Chapter I'll cover transition, transform, animation etc">
+    <meta name="author" content="Anees Ul Rehman">
+    <link rel="shortcut icon" href="/Chapter 01/assets/css-logo.png" type="imag/png">
+    <link rel="stylesheet" href="chapter-08.css">
+
+    <title>Chapter 08 - CSS</title>
+</head>
+
+<body>
+    <main>
+        <h1>Chpater 08 &mdash; CSS (Cascading Style Sheet)</h1>
+        <section>
+            <div>
+                <h2>Transitions</h2>
+                <p class="short-bio">Transitions enable you to define between two states of an element.</p>
+                <ul>
+                    <li><span class="blue-color">transition-property</span> : property you want to transition
+                        (font-size, width etc)</li>
+                    <li><span class="blue-color">transition-duration</span> : 2s / 4ms ...</li>
+                    <li><span class="blue-color">transition-timing-function</span> : ease-in / ease-out / linear / steps
+                        / cube ...</li>
+                    <li><span class="blue-color">transition-delay</span> : 2s / 4ms ...</li>
+                </ul>
+                <h3>Transition Shorthand</h3>
+                <p class="short-bio">property-name | duration | timing-function | delay</p>
+                <ul>
+                    <li><span class="blue-color">transition</span> : font-size 2s ease-in-out 0.2s</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>CSS Transform</h2>
+                <pre>
+            <code>
+            div {
+            /* rotate */
+            transform: rotate(45deg);
+            transform: rotate(360deg);
+            /* scale */
+            transform: scale(2);
+            transform: scale(0.5);
+            transform: scale(1, 2);
+            transform: scaleX(0.5);
+            transform: scaleY(0.5);
+            /* translate */
+            transform: translateX(20px);
+            transform: translateY(40px);
+            transform: translate(60px);
+            }
+
+            /* skew */
+            transform: skew(30deg);
+    
+            </code>
+                </pre>
+                <p class="short-bio">Used to apply 2D & 3D transformations</p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Animation</h2>
+                <pre>
+                <code>
+                @keyframe myName {
+                    from {
+                        font-size: 20px;
+                    }
+
+                    to {
+                        font-size: 40px;
+                    }
+                }
+                </code>
+                </pre>
+                <p class="short-bio">To animate CSS elements</p>
+
+                <h3>Animation Properties</h3>
+                <ul>
+                    <li>animation-name</li>
+                    <li>animation-duration</li>
+                    <li>animation-timing-function</li>
+                    <li>animation-delay</li>
+                    <li>animation-iteration-count</li>
+                    <li>animation-direction</li>
+                </ul>
+
+                <h3>Animation Shorthand</h3>
+                <pre><code>
+    div {
+        <span class="blue-color">animation : </span>myName 2s linear 3s infinite normal
+        }
+                </code></pre>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>% in Animation</h2>
+                <pre>
+            <code>
+                @keyframe myName {
+                    0%   { font-size: 20px; }
+                    50%  { font-size: 30px; }
+                    100% { font-size: 40px; }
+                }
+            </code>
+               </pre>
+            </div>
+        </section>
+        <section class="question-section">
+            <div>
+                <h2>Practice Set</h2>
+                <p class="question">Q: Create a simpe loader using CSS</p>
+                <p class="question"><span class="blue-color">Step1:</span> Create a div with circular shape & a thick
+                    border from one end (top/bottom/left/right)</p>
+                <p class="question"><span class="blue-color">Step2:</span> To make it spin create an animation which
+                    transforms it from 0deg to 360deg</p>
+                <p class="question"><span class="blue-color">Step3:</span> Add the animation property to the loader with
+                    infinite duration</p>
+
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>

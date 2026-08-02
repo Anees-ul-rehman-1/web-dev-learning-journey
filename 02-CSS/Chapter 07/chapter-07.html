@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In this chapter I'll cover Media Query">
+    <meta name="author" content="Anees Ul Rehman">
+    <link rel="shortcut icon" href="/Chapter 01/assets/css-logo.png">
+    <link rel="stylesheet" href="chapter-07.css">
+
+    <title>Chapter 07 - CSS</title>
+</head>
+
+<body>
+    <main>
+        <h1>Chpater 07 &mdash; CSS (Cascading Style Sheet)</h1>
+        <section>
+            <div>
+                <h2>Media Queries</h2>
+                <pre>
+                <code>
+                <span class="blue-color">@media</span> (<span class="green-color">width: 600px</span>) {
+                    div {
+                        background-color: <span class="red-color">red</span>;
+                    }
+                }
+            
+            
+                <span class="blue-color">@media</span> (<span class="green-color">min-width: 700px</span>) {
+                    div {
+                        background-color: <span class="yellow-color">yellow</span>;
+                    }
+                }
+
+
+                <span class="blue-color">@media</span> (<span class="green-color">min-width: 200px</span>) <span class="orange-color">and</span> (<span class="green-color">max-width: 300px</span>) {
+                    div {
+                        background-color: <span class="orange-color">orange</span>;
+                    }
+                }
+                </code>
+                </pre>
+                <p class="short-bio">Help to create a <span class="blue-color">responsive</span> website</p>
+            </div>
+        </section>
+
+        <section class="question-section">
+            <div>
+                <p class="question">Q: Add a media query to implement the following:</p>
+                <ul>
+                    <li>the color of a div changes to green for viewport width less than 300px</li>
+                    <li>the color of a div changes to pink for width between 300px & 400px</li>
+                    <li>the color of a div changes to red for width between 400px & 600px</li>
+                    <li>the color of a div changes to blue for width above 600px</li>
+                </ul>
+                <a href="practice set/Q-01.html" target="_blank">Click here to check my solution</a>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

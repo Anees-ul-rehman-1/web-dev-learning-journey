@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+
+    /* transition  */
+    /* transition-property: all; */
+    /* transition-duration: 1s; */
+    /* transition-timing-function: steps(5); */
+    /* transition-timing-function: ease-in; */
+    /* transition-timing-function: ease-out; */
+    /* transition-timing-function: ease-in-out; */
+    /* transition-timing-function: linear  ; */
+    /* transition-delay: 2s; */
+
+    /* transition shorthand  */
+    /* transition: all 1s linear; */
+
+    /* transform  */
+    /* transform: rotate(45deg); */
+    /* transform: rotate(90deg); */
+
+    /* transform: scale(2); */
+    /* transform: scaleX(5); */
+    /* transform: scaleY(3); */
+    /* transform: scale(3, 2); */
+
+    /* animation  */
+    /* animation-name: myfirstanimation; */
+    /* animation-duration: 5s; */
+    /* animation-timing-function: ease; */
+    /* animation-delay: 0s; */
+    /* animation-iteration-count: infinite;  */
+
+    animation: myfirstanimation 5s ease-in 0s infinite ;
+}
+
+.box:hover {
+    /* background-color: red; */
+    /* color: blue; */
+    /* font-size: larger; */
+    /* transform: scale(3, 2); */
+
+    /* translate  */
+    /* transform: translateX(-120px); */
+    /* transform: translateY(-120px); */
+    /* transform: translate(100px) ; */
+
+    /* skew  */
+    /* transform: skew(10deg); */
+}
+
+@keyframes myfirstanimation {
+    /* form {
+        background-color: aquamarine;
+        transform: translate(0px);
+    }
+
+    to {
+        background-color: red;
+        transform: translate(100px);
+    } */
+
+    0% {
+        transform: translateX(100px);
+    }
+
+    25% {
+        transform: translateY(100px);
+    }
+
+    50% {
+        transform: translateX(-100px);
+    }
+
+    75% {
+        transform: translateY(-100px);
+    }
+
+
+}

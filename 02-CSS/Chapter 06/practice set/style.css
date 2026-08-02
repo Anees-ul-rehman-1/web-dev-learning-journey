@@ -8,7 +8,6 @@
 /* Question one  */
 ul {
     background-color: black;
-    color: white;
     width: 100vw;
     height: 8vh;
     display: flex;
@@ -18,6 +17,11 @@ ul {
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+
+}
 
 /* Question two  */
 

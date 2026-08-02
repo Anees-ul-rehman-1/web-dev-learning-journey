@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+div{
+    width: 10vw;
+    height: 10vh;
+    background-color: green;
+}
+
+footer{
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    background-color: black;
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+    div{
+        background-color: pink;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 600px) {
+    div{
+        background-color: red;
+    }
+}
+
+@media (min-width: 600px) {
+    div{
+        background-color: blue;
+    }
+}

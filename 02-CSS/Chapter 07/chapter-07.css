@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: #051630;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+h1 {
+    color: orange;
+    background-color: #0650BE;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 100vw;
+    text-align: center;
+}
+
+section {
+    box-shadow: 0 0 5px #0650BE;
+    width: 70vw;
+    padding: 2rem;
+    transition: 0.3s ease;
+}
+
+section:hover{
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 0 50px #0650BE;
+}
+
+h2 {
+    color: orange;
+    margin-bottom: 2rem;
+}
+
+pre {
+    white-space: pre-wrap;
+    overflow-x: auto;
+    /* padding: 1rem; */
+}
+
+.blue-color {
+    color: #0650BE;
+}
+
+.green-color {
+    color: green;
+}
+
+.red-color {
+    color: red;
+}
+
+.yellow-color {
+    color: yellow;
+}
+
+.orange-color {
+    color: orange;
+}
+
+.short-bio {
+    color: grey;
+}
+
+.question {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-left: 1rem;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+a {
+    display: block;
+    width: fit-content;
+    color: lightgrey;
+    background-color: #0650BE;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.question-section{
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    pre {
+        margin-right: 60px;
+    }
+}
