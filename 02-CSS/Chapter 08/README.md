@@ -1,4 +1,4 @@
-## #  Chapter 06 -  Flexbox & it's properties in CSS
+## #  Chapter 08 -  Transition, Tramsform, & Animation in CSS
 
 ## Topics Covered 
 - Transition in CSS
