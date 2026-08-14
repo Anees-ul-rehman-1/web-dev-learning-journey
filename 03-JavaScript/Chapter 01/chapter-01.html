@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="In this Chapter I've covered JS intro, variables and it's rules, let, const, & var Data types in JS">
+    <meta name="author" content="Anees Ul Rehman">
+    <link rel="shortcut icon" href="/03-JavaScript/JS logo.png" type="image/png">
+    <link rel="stylesheet" href="chapter-01.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <title>Chapter 01 - JavaScript</title>
+</head>
+
+<body>
+    <main>
+        <h1>Chapter 01 &mdash; JavaScript</h1>
+        <section>
+            <h2>What is JavaScript</h2>
+            <p class="short-bio">JS is a programming language. We use it to give instructions to the computer
+                &mdash; turning static pages into things that can think, react, and calculate.</p>
+            <p class="process">Input (code) &rarr; <span class="computer">Computer</span> &rarr; Output</p>
+        </section>
+        <section>
+            <h2>Our 1st JS Code</h2>
+            <p class="short-bio">Console.log is used to log(print) a message to the console</p>
+            <pre>
+             <code>
+console.log("Apna College"); // prints a message to the console
+             </code>
+            </pre>
+        </section>
+        <section>
+            <h2>Variables in JS &mdash; containers for data</h2>
+            <p class="short-bio">Think of a variable as a labeled box. The label is the variable name, the thing inside
+                is the value. What kind of box you use &mdash; var, let, or const &mdash; decides whether you can swap
+                what's inside, or relabel it entirely.</p>
+            <div class="variable-boxes">
+                <div class="var-box">
+                    <span class="box-tag">var</span>
+                    <h3>Old-School box</h3>
+                    <div>
+                        <p>&mdash; Can be re-declared</p>
+                        <p>&mdash; Can be updated</p>
+                        <p>&mdash; Global scope</p>
+                    </div>
+                </div>
+                <div class="var-box">
+                    <span class="box-tag">let</span>
+                    <h3>Flexible box</h3>
+                    <div>
+                        <p>&mdash; Can't be re-declared</p>
+                        <p>&mdash; Can be updated</p>
+                        <p>&mdash; Block scope</p>
+                    </div>
+                </div>
+                <div class="var-box">
+                    <span class="box-tag">const</span>
+                    <h3>Sealed box</h3>
+                    <div>
+                        <p>&mdash; Can't be re-declared</p>
+                        <p>&mdash; Can't be updated</p>
+                        <p>&mdash; Block scope</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Variable Rules</h2>
+            <ul>
+                <li>Variable names are case sensitive; "a" & "A" is different.</li>
+                <li>Only letters, digits, underscore(_), or $ are allowed. (not even space)</li>
+                <li>Only a letter, underscore(_) or $ should be 1st character.</li>
+                <li>Reserved words cannot be variable names.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Data Types in JS</h2>
+            <div class="data-types">
+                <span class="data-type">Number</span>
+                <span class="data-type">String</span>
+                <span class="data-type">Boolean</span>
+                <span class="data-type">Undefined</span>
+                <span class="data-type">Null</span>
+                <span class="data-type">BigInt</span>
+                <span class="data-type">Symbol</span>
+            </div>
+        </section>
+        <section class="question-section">
+            <div>
+                <p class="question">Q 01: Create a const called "product" to store information shown in the picture.</p>
+                <img class="question-image" src="assets/practice 01.png" alt="Question 01 Image">
+                <div class="chapter">
+                    <h3>My Solution</h3>
+                    <p class="short-bio">Type JavaScript code below and run it — output shows up right here on the page.
+                    </p>
+                    <div class="console-wrap">
+                        <div class="console-bar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playground.js</span>
+                        </div>
+                        <textarea class="jsInput" spellcheck="false">const product = {
+    name: "Parker Jotter Standard CT Ball Pen (black)",
+    rating: 7000,
+    isDeal: true,
+    price: 270,
+    mrp: 285,
+    offer: "5%",
+
+};
+
+console.log(product);
+console.log(product.name);
+console.log(product["rating"]);
+console.log(product.offer);
+console.log(product.isDeal);
+console.log(product.price);
+                </textarea>
+
+                        <div class="console-actions">
+                            <span class="hint">Ctrl / Cmd + Enter also runs it</span>
+                            <button class="runBtn">Run ▸</button>
+                        </div>
+
+                        <div class="output"><span class="placeholder">// output will show up here</span></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="question">Q 02: Create a const object called "profile" to store information shown in the
+                    picture.</p>
+                <img class="question-image" src="assets/practice 02.png" alt="Question 02 Image">
+                <div class="chapter">
+                    <h3>My Solution</h3>
+                    <p class="short-bio">Type JavaScript code below and run it — output shows up right here on the page.
+                    </p>
+                    <div class="console-wrap">
+                        <div class="console-bar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playground.js</span>
+                        </div>
+                        <textarea class="jsInput" spellcheck="false">const profile = {
+    userName: "aneesulrehman",
+    isFollow: false,
+    post: 195,
+    follower: "569K",
+    following: 4,
+    name: "Anees Ul Rehman",
+    hasThread: true,
+    profession: "Entrepreneur",
+    bio: "BSIT Student | Full Stack Developer"
+};
+
+console.log(profile);
+console.log(typeof(profile));  
+console.log(typeof(profile.userName));
+console.log(typeof(profile["isFollow"]));
+console.log(typeof(profile.post));
+console.log(typeof(profile.follower));
+console.log(typeof(profile["following"]));
+console.log(typeof(profile.name));
+console.log(typeof(profile["hasThread"]));
+console.log(typeof(profile.profession));
+console.log(typeof(profile["bio"]));
+console.log(profile.userName);
+console.log(profile.isFollow);
+console.log(profile["post"]);
+console.log(profile.follower);
+console.log(profile["following"]);
+console.log(profile.name);
+console.log(profile["hasThread"]);
+console.log(profile.profession);
+console.log(profile["bio"]);
+                </textarea>
+
+                        <div class="console-actions">
+                            <span class="hint">Ctrl / Cmd + Enter also runs it</span>
+                            <button class="runBtn">Run ▸</button>
+                        </div>
+
+                        <div class="output"><span class="placeholder">// output will show up here</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="chapter-01.js"></script>
+</html>

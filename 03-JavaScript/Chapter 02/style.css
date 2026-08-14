@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #051630;
+    --border: #2c323d;
+    --text-color: #fff;
+    --muted: #8891a1;
+    --amber: #f2a93b;
+    --teal: #4fd1c5;
+    --coral: #ff7a6b;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+    font-family: sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    min-width: 100vw;
+}
+
+.chapter {
+    justify-self: center;
+    width: min(calc(100% - 4rem), 70rem);
+    padding: clamp(1rem, 5vw, 3rem);
+    box-shadow: 0 0 10px var(--teal);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h1 {
+    color: var(--amber);
+}
+
+.short-bio {
+    color: var(--muted);
+}
+
+.console-wrap {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.console-bar {
+    display: flex;
+    padding: 1rem 2rem;
+    gap: 8px;
+    align-items: center;
+    background-color: var(--border);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.dot.r {
+    background: #ff5f57;
+}
+
+.dot.y {
+    background: #febc2e;
+}
+
+.dot.g {
+    background: #28c840;
+}
+
+.console-bar span {
+    color: var(--muted);
+}
+
+.jsInput {
+    color: var(--amber);
+    width: 100%;
+    height: clamp(10rem, 20vw, 30rem);
+    background-color: var(--background);
+    border: none;
+    outline: none;
+    overflow: auto;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.console-action {
+    padding: 1rem 2rem;
+    border: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hint {
+    color: var(--muted);
+}
+
+.runBtn {
+    background-color: var(--amber);
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.runBtn:hover {
+    opacity: 0.8;
+}
+
+.output {
+    padding: 1rem 2rem;
+    font-weight: 600;
+    white-space: pre-wrap;
+}
+
+.output .ok {
+    color: var(--teal);
+}
+
+.output .err {
+    color: var(--coral);
+}
+
+.placeholder {
+    color: var(--muted);
+}
