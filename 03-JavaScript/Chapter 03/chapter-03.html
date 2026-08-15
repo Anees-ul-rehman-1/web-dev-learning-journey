@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In this Chapter I'll cover while loop, do-while loop, for-of loop, for-in loop">
+    <meta name="author" content="Anees Ul Rehman">
+    <link rel="shortcut icon" href="../JS logo.png">
+    <link rel="stylesheet" href="chapter-03.css">
+
+    <title>Chapter 03 - JS</title>
+</head>
+
+<body>
+    <main>
+        <h1>Chapter 03 &mdash; JavaScript</h1>
+        <section>
+            <div>
+                <h2>Loops in JS</h2>
+                <p class="short-bio">Loops ar used to execute a piece of code again & again</p>
+            </div>
+            <div>
+                <h3>for loop</h3>
+                <p class="short-bio">The for loop is used when you know how many times you want to execute a block of
+                    code.</p>
+            </div>
+            <pre><code>
+     <span class="bold-text">Syntax</span>
+     for(initialization; condition; update) {
+     // code to execute
+     }
+
+     <span class="bold-text">Example</span>
+     for (let i = 1; i <= 5; i++) {
+     console.log("Anees Ul Rehman");
+     }
+     <span class="bold-text">Output</span>
+     Anees Ul Rehman
+     Anees Ul Rehman
+     Anees Ul Rehman
+     Anees Ul Rehman
+     Anees Ul Rehman
+            </code></pre>
+            <div>
+                <h3>How it Works</h3>
+                <ul>
+                    <li><b>Initialization &rarr;</b> Runs once before the loop starts.</li>
+                    <li><b>Condition &rarr;</b>Checked before every iteration.</li>
+                    <li><b>Update &rarr;</b> Runs after each iteration.</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Common USe Cases</h3>
+                <ul>
+                    <li>Repeating an operation a specific number of times.</li>
+                    <li>Iterating through indexes.</li>
+                    <li>Processing array elements when an index is required.</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Infinite Loop</h2>
+                <p class="short-bio">An infinite loop is a loop that never terminates because its never becomes false.
+                </p>
+            </div>
+            <pre><code>
+     <span class="bold-text">Example</span>
+     while (true) {
+        console.log("Runing...");
+     }
+    &lt;!-- The loop will continue indefinitely. --&gt;
+    
+    <h3>Common Cause</h3>
+     <span class="bold-text">For example</span>
+     let i = 1;
+
+     while (i <= 5) {
+        console.log(i);
+     }
+     &lt;!-- Here i is never updated, so i <= 5 always remain true --&gt;
+
+     for (let i = 1; i >= 0; i++) {
+        conosle.log("Anees Ul Rehman")
+     }
+            </code></pre>
+            <div>
+                <h3>Important</h3>
+                <p class="short-bio">Always make sure that a loop has a valid way to eventually make its condition
+                    false.
+                </p>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>while loop</h2>
+                <p class="short-bio">The while loop repeatedly executes a block of code as long as the condition remains
+                    true.</p>
+            </div>
+            <pre><code>
+     <span class="bold-text">Syntax</span>
+     while (condition) {
+     // code to execute
+     }
+
+     <span class="bold-text">Example</span>
+     let i = 1; 
+     while (i <= 5){
+     console.log(i);
+     i++;
+     }
+     <span class="bold-text">Output</span>
+     1
+     2
+     3
+     4
+     5
+            </code></pre>
+            <div>
+                <h3>Important</h3>
+                <ul>
+                    <li>The condition is checked before the loop body executes.</li>
+                    <li>If the conditoin is false from the beginning, the loop will not execute even once.</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>do...while loop</h2>
+                <p class="short-bio">The do...while loop executes the block of code at last once, and then checks the
+                    condition.</p>
+            </div>
+            <pre><code>
+     <span class="bold-text">Syntax</span>
+     do {
+        // code to execute
+     } while (condition);
+     <span class="bold-text">Example</span>
+     let i = 1;
+     do {
+        console.log(i);
+        i++;
+     } while (i <= 5);
+     <span class="bold-text">Output</span>
+     1
+     2
+     3
+     4
+     5
+            </code></pre>
+            <div>
+                <h3>Important Different</h3>
+                <p class="short-bio">Unlike the while loop, the do...while loop executes its code before checking the
+                    condition.</p>
+            </div>
+            <pre><code>
+     let i = 10;
+     do {
+        console.log(i);
+     } while (i <= 5);
+     <span class="bold-text">Output</span>
+     10
+            </code></pre>
+            <p class="short-bio">Even though i <= 5 is false, 10 is printed once.</p>
+        </section>
+        <section>
+            <div>
+                <h2>for...of Loop</h2>
+                <p class="short-bio">The for...of loop is used to iterate over the values of iterable objects, such as
+                    arrays and strings.</p>
+            </div>
+            <pre><code>
+     for (let value of iterable) {
+        // code to execute
+     }
+
+     <span class="bold-text">Example with an Array</span>
+     const fruits = ["Apple", "Mango", "Banana"];
+     
+     for (let fruit of fruits) {
+        console.log(fruit);
+     }
+     <span class="bold-text">Output</span>
+     Apple 
+     Mango
+     Banana
+     <span class="bold-text">Example with a String</span>
+     const word = "Hello";
+
+     for (let character of word) {
+        console.log(character);
+     }
+
+     <span class="bold-text">Output</span>
+     H 
+     e 
+     l 
+     l 
+     o 
+     <span class="bold-text"></span>
+            </code></pre>
+            <div>
+                <h3>key Point</h3>
+                <p class="short-bio">for...of gives you the value of each element.</p>
+            </div>
+            <pre><code>Array &rarr; for...of &rarr; Values</code></pre>
+        </section>
+        <section>
+            <div>
+                <h2>for...in loop</h2>
+                <p class="short-bio">The for...in loop is primarily used to iterate over the keys (property names) of an
+                    object.</p>
+            </div>
+            <pre><code>
+     <span class="bold-text">Syntax</span>
+     for (let key in object) {
+        // code to execute
+     }
+
+     <span class="bold-text">Example</span>
+     const student = {
+        name: "Anees Ul Rehman",
+        age: 18,
+        couse: "JavaScript"
+     }
+
+     for (let key in student) {
+        console.log(key);
+     }
+     <span class="bold-text">Output</span>
+     name
+     age
+     course
+            </code></pre>
+            <div>
+                <h3>Accessing Values</h3>
+                <p class="short-bio">You can use the key to access its corresponding value:</p>
+            </div>
+            <pre><code>
+     for (let key in student) {
+        console.log(key, student[key]);
+     }
+     <span class="bold-text">Output</span>
+     name Alex
+     age 18
+     course JavaScript
+            </code></pre>
+            <div>
+                <h3>Key Point</h3>
+                <p class="short-bio">for...in gives you the keys of an object.</p>
+            </div>
+            <pre><code>object &rarr; for...in &rarr; Keys</code></pre>
+        </section>
+        <section class="question-section">
+            <h2>Practice Set</h2>
+            <div>
+                <p class="short-bio">Q 01: Print all even numbers from 0 to 100.</p>
+                <div class="chapter">
+                    <div>
+                        <h3>Solution</h3>
+                        <p class="short-bio">Type JavaScript code below and run it — output shows up right here on the
+                            page.</p>
+                    </div>
+                    <div class="console-wrap">
+                        <div class="console-bar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playground.js</span>
+                        </div>
+                        <textarea class="jsInput" spellcheck="false">for (let num = 0; num <= 100; num++) {
+       if(num % 2 === 0) {
+            console.log("It's is a Even number =", num);
+       } else {
+            //console.log("It's is an odd number =", num);
+       }
+}
+
+</textarea>
+                        <div class="console-action">
+                            <span class="hint">Ctrl / Cmd + Enter also run it</span>
+                            <button class="runBtn">Run ‣</button>
+                        </div>
+                        <div class="output"><span class="placeholder">// Output will show here</span></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="short-bio">Q 02: Create a game where you start with any random game number. Ask the user to
+                    keep guessing the game number until the user enters correct value.</p>
+                <div class="chapter">
+                    <div>
+                        <h3>Solution</h3>
+                        <p class="short-bio">Type JavaScript code below and run it — output shows up right here on the
+                            page.</p>
+                    </div>
+                    <div class="console-wrap">
+                        <div class="console-bar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playground.js</span>
+                        </div>
+                        <textarea class="jsInput" spellcheck="false">let gameNumber = 88;
+let guessNumber = Number(prompt("Guess a game number"));
+
+while (gameNumber !== guessNumber) {
+      guessNumber=   Number(prompt("You've entered wrong number Guess again:"))
+  }
+console.log("Congratulation! You've entered the right number");</textarea>
+                        <div class="console-action">
+                            <span class="hint">Ctrl / Cmd + Enter also run it</span>
+                            <button class="runBtn">Run ‣</button>
+                        </div>
+                        <div class="output"><span class="placeholder">// Output will show here</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="chapter-03.js"></script>
+</body>
+
+</html>

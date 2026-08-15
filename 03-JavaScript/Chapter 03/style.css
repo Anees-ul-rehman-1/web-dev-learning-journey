@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #051630;
+    --border: #2c323d;
+    --text-color: #fff;
+    --muted: #8891a1;
+    --amber: #f2a93b;
+    --teal: #4fd1c5;
+    --coral: #ff7a6b;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--background);
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: min(100% - 4rem, 70rem);
+    padding: clamp(1rem, 5vw, 2.5rem);
+    box-shadow: 0 0 10px var(--teal);
+    gap: min(1rem, 5vw);
+}
+
+h1 {
+    color: var(--amber);
+}
+
+.short-bio {
+    color: var(--muted);
+}
+
+.console-wrap {
+    border: 2px solid var(--border);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.console-bar {
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+.dot {
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot.r {
+    background-color: var(--coral);
+}
+
+.dot.y {
+    background-color: var(--amber);
+}
+
+.dot.g {
+    background-color: yellowgreen
+}
+
+.console-bar span {
+    color: var(--muted);
+}
+
+.jsInput {
+    width: 100%;
+    min-height: clamp(10rem, 10vw, 20rem);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--amber);
+    padding: 1rem 2rem;
+}
+
+.console-action {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    border-top: 1px solid var(--border);
+}
+
+.hint {
+    color: var(--muted);
+}
+
+.runBtn {
+    padding: .5rem 1.5rem;
+    background-color: var(--amber);
+    color: var(--background);
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.output {
+    padding: 1rem 2rem;
+    border-top: 1px solid var(--border);
+    white-space: pre-wrap;
+}
+
+.placeholder {
+    color: var(--muted);
+}
+
+.output .ok {
+    color: var(--teal);
+}
+
+.output .err {
+    color: var(--coral);
+}

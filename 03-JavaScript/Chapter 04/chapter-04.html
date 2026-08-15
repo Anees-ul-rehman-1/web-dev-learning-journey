@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In this Chapter I've coverd Strings, Strings Methods, Template literals in JS">
+    <meta name="author" content="Anees Ul Rehman">
+    <link rel="shortcut icon" href="../JS logo.png" type="image/png">
+    <link rel="stylesheet" href="chapter-04.css">
+
+    <title>Chapter 04 - JS</title>
+</head>
+
+<body>
+    <main>
+        <h1>Chapter 04 &mdash; JavaScript</h1>
+        <section>
+            <div>
+                <h2>Strings in JS</h2>
+                <p class="short-bio">Strings in a sequence of characters used to represent text.</p>
+            </div>
+            <div>
+                <h3>Create String</h3>
+                <pre><code>
+     let str = "Anees Ul Rehman";
+                </code></pre>
+            </div>
+            <div>
+                <h3>String Length</h3>
+                <pre><code>
+    str.length
+                </code></pre>
+            </div>
+            <div>
+                <h3>String Indices</h3>
+                <pre><code>
+     str[0], str[1], str[2]
+                </code></pre>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>Template Literals in JS</h2>
+                <p class="short-bio">A way to have embedded expressions in strings</p>
+                <pre><code>
+     `this is a template literal`
+            </code></pre>
+            </div>
+            <div>
+                <h3>String Interpolation</h3>
+                <p class="short-bio">To create strings by doing substitution of placeholders</p>
+                <pre><code>
+     `string text <span class="orange-text">${expression}</span> string text`
+            </code></pre>
+            </div>
+        </section>
+        <section>
+            <div>
+                <h2>String Method in JS</h2>
+                <p class="short-bio">These are built-in functions to manipulate a string</p>
+                <ul>
+                    <li>str.toUpperCase()</li>
+                    <li>str.toLowerCase()</li>
+                    <li>str.trim() <span class="orange-text">// removes whitespacs</span></li>
+                    <li>str.slice(start, end?) <span class="orange-text">// returns part of string</span></li>
+                    <li>str1.concat(str2) <span class="orange-text">// joins str2 with str1</span></li>
+                    <li>str.replace(searchVal, newVal)</li>
+                    <li>str.charAt(idx)</li>
+                </ul>
+            </div>
+        </section>
+        <section class="question-section">
+            <h2>Practice Set</h2>
+            <p>Q01: Prompt the user to enter their full name, Generate a username for them based on the input. Start
+                username with @, followed by their full name and ending with the fullname length.</p>
+            <p>eg: user name = "shardhakhapra", username should be "@shardhakhapra13"</p>
+            <div class="chapter">
+                <div>
+                    <h3>Solution</h3>
+                    <p class="short-bio">Type JavaScript code below and run it — output shows up right here on the page.
+                    </p>
+                </div>
+                <div class="console-wrap">
+                    <div class="console-bar">
+                        <div class="dot r"></div>
+                        <div class="dot y"></div>
+                        <div class="dot g"></div>
+                        <span>playground.js</span>
+                    </div>
+                    <textarea class="jsInput" spellcheck="false"></textarea>
+                    <div class="console-action">
+                        <span class="hint">Ctrl / Cmd + Enter also run it</span>
+                        <button class="runBtn">Run ‣</button>
+                    </div>
+                    <div class="output"><span class="placeholder">// Output will show up here</span></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="chapter-04.js"></script>
+</body>
+
+</html>
