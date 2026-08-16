@@ -27,7 +27,65 @@
                     <div class="dot g"></div>
                     <span>playground.js</span>
                 </div>
-                <textarea class="jsInput">dfdfdfdfjkfjdkfjdjdfdfdfdfjkfjdkfjdjdfdfdfdfjkfjdkfjdjdfdfdfdfjkfjdkfjdjdfdfdfdfjkfjdkfjdjdfdfdfdfjkfjdkfjdjdfdfdfdfjkfjdkfjdjdfdfdfdfjkfjdkfjdjdfdfdfdfjkfjdkfjdjdfdfdfdfjkfjdkfjdjdfdfdfdfjkfjdkfjdjdfdfdfdfjkfjdkfjdjdfdfdfdfjkfjdkfjdj</textarea>
+                <textarea class="jsInput" spellcheck="false">// practiced content
+
+// strings
+let str = "ApnaCollege";
+let str2 = 'ShardhaWedding';
+console.log(str);
+console.log(str2);
+
+//--------- strings property ------------
+// length 
+console.log(str.length);
+console.log(str2.length);
+
+// indices 
+console.log(str[4]);
+console.log(str[8]);
+console.log(str[0], str[1], str[2], str[3], str[4], str[5], str[6], str[7], str[8], str[9], str[10]);
+
+// Template Literals
+let specialString =  `This is a Template Literal`;
+console.log(specialString);
+console.log(typeof specialString);
+
+let obj = {
+    item: "pen",
+    price: 10,
+};
+
+let output = `Ths cost of ${obj.item} is ${obj.price} pkr.`
+console.log(output);
+console.log("The cost of", obj.item, "is", obj.price, "pkr.");
+
+// escape characters
+console.log("Anees\nUl\nRehman");
+console.log("Anees\tUl\tRehman");
+
+//------------ string methods -----------
+console.log(specialString.toUpperCase());
+console.log(specialString.toLowerCase());
+console.log(specialString);
+specialString = `   This is TEMPLATE LITERAL       JS          `;
+console.log(specialString);
+console.log(specialString.trim());
+
+let number = "123456789";
+console.log(number.slice(3, 7));
+result = specialString.concat(number);
+console.log(result.trim());
+
+let str3 = "hello";
+console.log(str3)
+console.log(str3.replace("h", "y"));
+console.log(str3.replace("lo", "p"));
+
+str3 = "hellololo";
+console.log(str3);
+console.log(str3.replaceAll("lo", "p"));
+
+</textarea>
                 <div class="console-action">
                     <span class="hint">Ctrl / Cmd + Enter also run it</span>
                     <button class="runBtn">Run ‣</button>

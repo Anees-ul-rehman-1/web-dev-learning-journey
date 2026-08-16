@@ -37,7 +37,13 @@ section {
     box-shadow: 0 0 10px var(--secondry-bg);
     padding: clamp(1rem, 5vw, 3rem);
     gap: 1rem;
+    transition: 0.3s ease;
 
+}
+
+section:hover{
+    transform: translateY(-5px) scale(1.03);
+    box-shadow: 0 0 50px var(--secondry-bg);
 }
 
 h1 {
