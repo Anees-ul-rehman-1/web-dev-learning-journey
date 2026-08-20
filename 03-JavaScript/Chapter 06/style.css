@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #051630;
+    --border: #2c323d;
+    --text-color: #fff;
+    --muted: #8891a1;
+    --amber: #f2a93b;
+    --teal: #4fd1c5;
+    --coral: #ff7a6b;
+    --secondry-bg: #0650BE;
+    --console-bg: #21262F;
+}
+
+body {
+    background-color: var(--background);
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+section {
+    padding: clamp(1.5rem, 5vw, 4rem);
+    box-shadow: 0 0 10px var(--secondry-bg);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 5vw, 2rem);
+    width: min(100% - 3rem, 70rem)
+}
+
+
+h1 {
+    color: var(--amber);
+    padding: clamp(.5rem, 5vw, 1rem);
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    background-color: var(--secondry-bg);
+    text-align: center;
+}
+
+h2 {
+    color: var(--amber);
+}
+
+.short-bio {
+    color: var(--muted);
+
+}
+
+.console-wrap {
+    border: 2px solid var(--border);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.console-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--console-bg);
+    padding: 1rem 2rem;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.dot.r {
+    background-color: rgb(218, 18, 18);
+}
+
+
+.dot.y {
+    background-color: rgb(218, 218, 18)
+}
+
+.dot.g {
+    background-color: rgb(18, 218, 18);
+}
+
+.console-bar span {
+    font-weight: 600;
+    color: var(--muted);
+}
+
+.jsInput {
+    padding: 1rem 2rem;
+    min-height: clamp(10rem, 10vw, 20rem);
+    color: var(--amber);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.console-action {
+    padding: 1rem 2rem;
+    background-color: var(--console-bg);
+    display: flex;
+    justify-content: space-between;
+}
+
+.hint {
+    color: var(--muted);
+}
+
+.runBtn {
+    background-color: var(--amber);
+    border: none;
+    padding: .5rem 1.5rem;
+    border-radius: 1rem;
+    transition: 0.3s ease;
+    font-weight: 600;
+}
+
+.runBtn:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+
+.output {
+    padding: 1rem 2rem;
+    white-space: pre-wrap;
+}
+
+.output .ok {
+    color: var(--teal);
+}
+
+.output .err {
+    color: var(--coral);
+}
+
+.placeholder {
+    color: var(--muted);
+}

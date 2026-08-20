@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In this I've Covered Function, arrow function it's methods">
+    <meta name="author" content="Anees Ul Rehman">
+    <link rel="shortcut icon" href="/JS logo.png" type="image/png">
+    <link rel="stylesheet" href="chapter-06.css">
+
+    <title>Chapter 06 | JavaScript</title>
+</head>
+
+<body>
+    <main class="stack">
+        <h1>Chapter 06 &mdash; JavaScript</h1>
+        <section class="stack">
+            <div>
+                <h2>Functions in JavaScript</h2>
+                <p class="short-bio">Block of code that performs a specific task, can be invoked/call whenever needed
+                </p>
+            </div>
+            <pre><code>
+     <h3>Function Syntax</h3>
+     function functionName() {
+        // do some work
+     }
+
+     <h3>Fuction call</h3>
+     functionName();
+
+     <h3>Parameter in Function</h3>
+     function functionName(param1, param2, ...) {
+        // do some work
+     } 
+
+     functionName("ad", "as");
+     // ("ad", "as") these are argument
+     // first argument "ad" goes for first param1 second for param2 etc
+            </code></pre>
+        </section>
+        <section class="stack">
+            <div>
+                <h2>Arrow Function</h2>
+                <p class="short-bio">Compact way of writing a function</p>
+            </div>
+            <pre><code>
+     const functionName = (param1, param2,..) => {
+        //do some work
+     }
+
+     <h3>Example</h3>
+     const sum = (a, b) => {
+        return a + b;
+     }
+            </code></pre>
+        </section>
+        <section class="stack">
+            <div>
+                <h2>forEach loop in Arrays</h2>
+                <p class="short-bio">callBackFunction: Here , it is afunction to excute for each element in the array
+                </p>
+            </div>
+            <pre><code>
+     <h3>Syntax</h3>
+     arr.forEAch(callBackFunction)
+            </code></pre>
+            <p>A callBack is a function passed as an argument to another function.</p>
+            <pre><code>
+     <h3>For Example</h3>
+     arr.forEach((val) => {
+        // execute code here
+     });
+            </code></pre>
+        </section>
+        <section class="stack">
+            <div>
+                <h2>Map (Array Method)</h2>
+                <p class="short-bio">Creates a new array with the results of some operation. The value its callback
+                    returns are used to from new array</p>
+            </div>
+            <pre><code>
+     <h3>Syntax</h3>
+     arr.map(callbackFnx(value, index, array));
+     <h3>Example</h3>
+     let newArr = arr.map ((val) => {
+        return val * 2;
+     });
+            </code></pre>
+        </section>
+        <section class="stack">
+            <div>
+                <h2>filter (Array Mehod)</h2>
+                <p class="short-bio">Creates a new array of elements that give true for a condition/filter.</p>
+                <p class="short-bio">Eg: all even numbers</p>
+            </div>
+            <pre><code>
+     let newArr arr.filter ((val) => {
+        return val % 2 === 0;
+     });
+            </code></pre>
+        </section>
+        <section class="stack">
+            <div>
+                <h2>reduce (Array Method)</h2>
+                <p class="short-bio">
+                    Performs some operation & reduces the array to a single value. It returns that single value.
+                </p>
+            </div>
+            <pre><code>
+     const array1 = [1, 2, 3, 4];
+    
+     // 0 + 1 + 2 + 3 + 4
+     const initialValue = 0;
+     const sumWithInitial = array1.reduce((prev, curr, initialValue) => prev + curr);
+     console.log(sumWithInitial);
+     expected output 10
+            </code></pre>
+        </section>
+        <section class="questionSection stack">
+            <h2>Practice set</h2>
+            <div>
+                <p>Q01: Create a function using the "function" keyword that takes a String as an argument & returns the
+                    number of vowels in the String.</p>
+                <div class="chapter stack">
+                    <div>
+                        <h3>Solution</h3>
+                        <p class="short-bio">Tyep code in below box and your output will also show here on the same page
+                        </p>
+                    </div>
+                    <div class="consoleWrap">
+                        <div class="consoleBar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playgrouod.js</span>
+                        </div>
+                        <textarea class="jsInput" spellcheck="false">function countVowels(string) { 
+     let count = 0;
+     string = string.toLowerCase();
+     for (let i of string) {
+         if (i === "a" || i === "e" || i === "i" || i === "o" || i === "u") {
+               count++
+          }
+     }
+     return count;
+}
+
+
+let vowels = countVowels(prompt("Enter a word"));
+console.log(vowels);</textarea>
+                        <div class="consoleAction">
+                            <span class="hint">Ctrl / Cmd plus Enter also run it</span>
+                            <button class="runBtn">Run ‣</button>
+                        </div>
+                        <div class="output"><span class="placeholder">//Output will show up here</span></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Q02: Create an arrow function to perform the same task.</p>
+                <div class="chapter stack">
+                    <div>
+                        <h3>Solution</h3>
+                        <p class="short-bio">Type code in below box and your output will also show here on the same page
+                        </p>
+                    </div>
+                    <div class="consoleWrap">
+                        <div class="consoleBar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playgrouod.js</span>
+                        </div>
+                        <textarea class="jsInput" spellcheck="false">const countVowels = (string) => { 
+     let count = 0;
+     string = string.toLowerCase();
+     for (let i of string) {
+         if (i === "a" || i === "e" || i === "i" || i === "o" || i === "u") {
+               count++
+          }
+     }
+     return count;
+}
+
+
+let vowels = countVowels(prompt("Enter a word"));
+console.log(vowels);</textarea>
+                        <div class="consoleAction">
+                            <span class="hint">Ctrl / Cmd plus Enter also run it</span>
+                            <button class="runBtn">Run ‣</button>
+                        </div>
+                        <div class="output"><span class="placeholder">//Output will show up here</span></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Q03: For a given array of numbers, print the square of each value using the forEach loop.</p>
+                <div class="chapter stack">
+                    <div>
+                        <h3>Solution</h3>
+                        <p class="short-bio">Type code in below box and your output will also show here on the same page
+                        </p>
+                    </div>
+                    <div class="consoleWrap">
+                        <div class="consoleBar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playground.js</span>
+                        </div>
+                        <textarea class="jsInput" spellcheck="false">let numberArray = [2, 4, 5, 3, 20, 7, 6];
+const square1 = numberArray.forEach((val) => {
+    console.log(val * val);
+});
+
+// by using normal function
+console.log("// By using normal function");
+
+function squareFun (val) {
+    console.log(val * val);
+}
+numberArray.forEach(squareFun);
+                        </textarea>
+                        <div class="consoleAction ">
+                            <div class="hint">Ctrl / Cmd plus Enter also run it</div>
+                            <button class="runBtn">Run ‣</button>
+                        </div>
+                        <div class="output"><span class="placeholder">//Output will show up here</span></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Q04: <br> a) We are given array of marks of students. Filter our of the marks of students that scored
+                    90+.</p>
+                <div class="chapter stack">
+                    <div>
+                        <h3>Solution</h3>
+                        <p class="short-bio">Type code in below box and your output will also show here on the same page
+                        </p>
+                    </div>
+                    <div class="consoleWrap">
+                        <div class="consoleBar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playground.js</span>
+                        </div>
+                        <textarea class="jsInput" spellcheck="false">let stuMarks = [43, 90, 43, 92, 93, 43, 32, 99];
+const topper = stuMarks.filter((val) => {
+    if(val >= 90){
+        return true;
+    }
+});
+console.log(topper);</textarea>
+                        <div class="consoleAction ">
+                            <div class="hint">Ctrl / Cmd plus Enter also run it</div>
+                            <button class="runBtn">Run ‣</button>
+                        </div>
+                        <div class="output"><span class="placeholder">//Output will show up here</span></div>
+                    </div>
+                </div>
+                <p>b) Take a number n as input from user. Create an array of number from 1 to n.</p>
+                <div class="chapter stack">
+                    <div>
+                        <h3>Solution</h3>
+                        <p class="short-bio">Type code in below box and your output will also show here on the same page
+                        </p>
+                    </div>
+                    <div class="consoleWrap">
+                        <div class="consoleBar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playground.js</span>
+                        </div>
+                        <textarea class="jsInput" spellcheck="false">let userNum = Number(prompt("Enter a number:"));
+const nums = ((val) => {
+    let numArr = [];
+    if (val > 0) {
+        for (let i = 0; i <= val; i++) {
+            numArr.push(i);
+        }
+    } else {
+        for (let i = 0; i >= val; i--) {
+            numArr.push(i);
+    
+        }
+    }
+    return numArr;
+});
+
+let newArray = nums(userNum);
+console.log(newArray);</textarea>
+                        <div class="consoleAction ">
+                            <div class="hint">Ctrl / Cmd plus Enter also run it</div>
+                            <button class="runBtn">Run ‣</button>
+                        </div>
+                        <div class="output"><span class="placeholder">//Output will show up here</span></div>
+                    </div>
+                </div>
+                <p>c) Use the reduce method to calculate sum of all numbers in the array.</p>
+                <div class="chapter stack">
+                    <div>
+                        <h3>Solution</h3>
+                        <p class="short-bio">Type code in below box and your output will also show here on the same page
+                        </p>
+                    </div>
+                    <div class="consoleWrap">
+                        <div class="consoleBar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playground.js</span>
+                        </div>
+                        <textarea class="jsInput" spellcheck="false">let array = [43, 53, 53, 54, 54];
+array = array.reduce((pre, curr) => {
+        return pre + curr
+ });
+console.log(array);</textarea>
+                        <div class="consoleAction ">
+                            <div class="hint">Ctrl / Cmd plus Enter also run it</div>
+                            <button class="runBtn">Run ‣</button>
+                        </div>
+                        <div class="output"><span class="placeholder">//Output will show up here</span></div>
+                    </div>
+                </div>
+                <p>d) Use the reduce method to calculate product of all numbers in the array.</p>
+                <div class="chapter stack">
+                    <div>
+                        <h3>Solution</h3>
+                        <p class="short-bio">Type code in below box and your output will also show here on the same page
+                        </p>
+                    </div>
+                    <div class="consoleWrap">
+                        <div class="consoleBar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playground.js</span>
+                        </div>
+                        <textarea class="jsInput" spellcheck="false">let userNum = Number(prompt("Enter a number for you want factorial"));
+const nums = ((val) => {
+      let numArr = [];
+      if(val >= 0) {
+          for(let i = 1; i <= val; i++) {
+                 numArr.push(i);
+           }
+      } else {
+           for (let i = 0; i >= val; i--) {
+                numArr.push(i);
+            } 
+       }
+       return numArr;
+});
+
+
+let numArr = nums(userNum);
+let factorial = numArr.reduce((prev, curr) => {
+    return prev * curr;  
+});
+console.log(factorial);
+</textarea>
+                        <div class="consoleAction ">
+                            <div class="hint">Ctrl / Cmd plus Enter also run it</div>
+                            <button class="runBtn">Run ‣</button>
+                        </div>
+                        <div class="output"><span class="placeholder">//Output will show up here</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="chapter-06.js"></script>
+</body>
+
+</html>

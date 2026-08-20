@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #051630;
+    --border: #2c323d;
+    --text-color: #fff;
+    --muted: #8891a1;
+    --amber: #f2a93b;
+    --teal: #4fd1c5;
+    --coral: #ff7a6b;
+    --secondry-bg: #0650BE;
+    --console-bg: #21262F;
+}
+
+.stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--background);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+main {
+    align-items: center;
+    gap: clamp(1rem, 5vw, 3rem);
+}
+
+h1 {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    padding: clamp(.5rem, 5vw, 1rem);
+    background-color: var(--secondry-bg);
+    color: var(--amber);
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+section {
+    padding: clamp(1rem, 5vw, 2rem);
+    gap: 1rem;
+    width: min(100% - 4rem, 70rem);
+    box-shadow: 0 0 10px var(--secondry-bg);
+    transition: 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 0 50px var(--secondry-bg);
+}
+
+h2,
+h3 {
+    color: var(--amber);
+}
+
+.short-bio {
+    color: var(--muted);
+}
+
+pre {
+    overflow: auto;
+}
+
+.questionSection{
+    margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.chapter {
+    gap: 1rem;
+    margin: clamp(1rem, 5vw, 2rem);
+}
+
+.consoleWrap {
+    border: 2px solid var(--console-bg);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.consoleBar {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--console-bg);
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.dot.r {
+    background-color: rgb(218, 18, 18);
+}
+
+.dot.y {
+    background-color: rgb(218, 218, 18);
+}
+
+.dot.g {
+    background-color: rgb(18, 218, 18);
+}
+
+.consoleBar span {
+    color: var(--muted);
+}
+
+.jsInput {
+    min-height: 10rem;
+    background-color: transparent;
+    width: 100%;
+    color: var(--amber);
+    padding: 1rem 2rem;
+    border: none;
+    outline: none;
+}
+
+.consoleAction {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: var(--console-bg);
+}
+
+.hint {
+    color: var(--muted);
+}
+
+.runBtn {
+    background-color: var(--amber);
+    border: none;
+    padding: .5rem 1.5rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    border-radius: 1rem;
+}
+
+.runBtn:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+
+.output {
+    padding: 1rem 2rem;
+    white-space: pre-wrap;
+}
+
+.output .ok {
+    color: var(--teal);
+}
+
+.output .err {
+    color: var(--coral);
+}
+
+.placeholder {
+    color: var(--muted);
+}

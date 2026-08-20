@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In this Chapter I'll cover up Arrays, looping over an Array, Arrays methods">
+    <meta name="author" content="Anees Ul Rehman">
+    <link rel="shortcut icon" href="/JS logo.png" type="image/png">
+    <link rel="stylesheet" href="chapter-05.css">
+
+    <title>Chapter 05 - JS</title>
+</head>
+
+<body>
+    <main>
+        <h1>Chapter 05 - JavaScript</h1>
+        <section>
+            <div>
+                <h2>Arrays in JS</h2>
+                <p class="short-bio">Collections of items</p>
+            </div>
+            <div>
+                <h3>Create Array</h3>
+                <pre><code>
+     let heros = ["ironman", "hulk", "thor", "batman"];
+     let mark = [96, 75, 48, 83, 66];
+     let info = ["rahul", 86, "Delhi"];
+                </code></pre>
+            </div>
+            <div>
+                <h3>Array Indeices</h3>
+                <p class="short-bio">arr[0]; arr[1]; arr[2]....</p>
+                <img src="array indeces.png" alt="Array indeces">
+            </div>
+            <div>
+                <h3>Looping over an Array</h3>
+                <p class="short-bio">Print all elements of an array</p>
+                <pre><code>
+     let array = ["Anees Ul Rehman", "Yasir Ul Rehman", "Nasir Ul Rehman", "Khalil Ul Rehman", "Aliza"];
+     for (let i = 0; i < array.length; i++) {
+        console.log(array[i]);
+     }
+                </code></pre>
+            </div>
+        </section>
+        <section>
+            <h2>Array Methods</h2>
+            <pre><code>
+     push(): add to end
+
+     pop(): delete from end & return
+
+     toString(): converts array to string
+
+     concat(): joins multiple arrays & returns result
+
+     unshift(): add to start
+
+     shift(): delete from start & return
+
+     slice(): returns a piece of the array
+     <span class="orange-text">slice(startIdx, endIdx)</span>
+     
+
+     splice(): change original array (add, remove, replace)
+     <span class="orange-text">splice(startIdx, delCount, newEliment)</span>
+            </code></pre>
+        </section>
+        <section class="question-section">
+            <div>
+                <h2>Practice Set</h2>
+                <p>Q01: For a given array with marks of students -> [85, 97, 44, 37, 60]. Find the average marks of
+                    the entire class.</p>
+                <div class="chapter">
+                    <div>
+                        <h3>Solution</h3>
+                        <p class="short-bio">Type JavaScript code below and run it — output shows up right here on the
+                            page.</p>
+                    </div>
+                    <div class="console-wrap">
+                        <div class="console-bar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playground.js</span>
+                        </div>
+                        <textarea class="jsInput" spellcheck="false">let marks = [85, 97, 44, 37, 60];
+let total = 0;
+
+for (let mark of marks) {
+     total += mark;
+}
+let average = total /  marks.length;
+console.log(`The average of ${total} is ${average}`);</textarea>
+                        <div class="console-action">
+                            <span class="hint">Ctrl / Cmd plus Enter also run it</span>
+                            <button class="runBtn">Run ‣</button>
+                        </div>
+                        <div class="output"><span class="placeholder">// Output will show up here</span></div>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <p>Q02: For a given array with prices of 5 items -> [250, 645, 300, 900, 50]. All items have an offre of
+                    10% OFF on them. Change the array to store final price offer applying offer.</p>
+                <div class="chapter">
+                    <div>
+                        <h3>Solution</h3>
+                        <p class="short-bio">Type JavaScript code below and run it — output shows up right here on the
+                            page.</p>
+                    </div>
+                    <div class="console-wrap">
+                        <div class="console-bar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playground.js</span>
+                        </div>
+                        <textarea class="jsInput" spellcheck="false">let priceOfItem = [250, 645, 300, 900, 50];
+for(let i = 0; i < priceOfItem.length; i++) {
+    let offer = priceOfItem[i] * 10 / 100;
+    priceOfItem[i] = priceOfItem[i] - offer;
+}
+
+console.log(`After offer the array of prices will be ${priceOfItem}`);</textarea>
+                        <div class="console-action">
+                            <span class="hint">Ctrl / Cmd plus Enter also run it</span>
+                            <button class="runBtn">Run ‣</button>
+                        </div>
+                        <div class="output"><span class="placeholder">// Output will show up here</span></div>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <p>Q03: Create an array to store companies -> "Bloomberg", "Microsoft", "Uber", "Google", "IBM",
+                    "Netflix"</p>
+                <ol type="a">
+                    <li>Remove the first company from the array</li>
+                    <li>Remove Uber & Add Ola in its place</li>
+                    <li>Add Amazon at the end</li>
+                </ol>
+                <div class="chapter">
+                    <div>
+                        <h3>My solution</h3>
+                        <p class="short-bio">Type JavaScript code below and run it — output shows up right here on the page.</p>
+                    </div>
+                    <div class="console-wrap">
+                        <div class="console-bar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playground.js</span>
+                        </div>
+                        <textarea class="jsInput" spellcheck="false">let companies = ["Bloomberg", "Microsoft", "Uber", "Google", "IBM", "Netflix"];
+// a. Remove the first company from the array
+companies.shift();
+console.log(companies);
+
+// b. Remove Uber & Add Ola in its place
+companies.splice(1, 1, "Ola");
+console.log(companies);
+
+// c. Add Amazon at the end
+companies.push("Amazon");
+console.log(companies);
+                        </textarea>
+                        <div class="console-action">
+                            <span class="hint">Ctrl / Cmd plus Enter also run it</span>
+                            <button class="runBtn">Run ‣</button>
+                        </div>
+                        <div class="output"><span class="placeholder">// Output will show up here</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="chapter-05.js"></script>
+</body>
+
+</html>

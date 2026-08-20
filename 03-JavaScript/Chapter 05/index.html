@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Array, looping arrays in JS">
+    <meta name="author" content="Anees Ul Rehman">
+    <link rel="shortcut icon" href="/JS logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Chapter 05 - JS</title>
+</head>
+
+<body>
+    <main>
+        <h1>Chapter 05 &mdash; JavaScript</h1>
+        <section>
+            <div>
+                <h2>Practice here in JavaScript playground</h2>
+                <p class="short-bio">Tyep code in below box and your output will also show here on the same page</p>
+            </div>
+            <div class="console-wrap">
+                <div class="console-bar">
+                    <div class="dot r"></div>
+                    <div class="dot y"></div>
+                    <div class="dot g"></div>
+                    <span>playground.js</span>
+                </div>
+                <textarea class="jsInput" spellcheck="false">// Practced today content 
+// Arrays
+// exmple
+let marksStudent1 = 80;
+let marksStudent2 = 50;
+let marksStudent3 = 40;
+let marksStudent4 = 30;
+let marksStudent5 = 90;
+
+let marks = [97, 44, 54, 65, 77];
+console.log(marks);
+console.log(marks.length);
+console.log(marks[4]);
+
+let heros = ["Ironman", "thor", "hulk", "spiderman", "tony stark"];
+console.log(heros);
+console.log(heros.length);
+console.log(heros[0]);
+console.log(heros[1])
+console.log(typeof heros);
+
+// looping on arrays 
+// array element print using for loop
+for (let i = 0; i < heros.length; i++) {
+    console.log(heros[i]);
+}
+
+// array element print using for of loop 
+for (let hero of heros) {
+    console.log(hero.toUpperCase());
+    console.log(hero.toLowerCase())
+}
+
+// array element print using for in loop 
+for (let i in heros) {
+    console.log(i);
+}
+</textarea>
+                <div class="console-action">
+                    <span class="hint">Ctrl / Cmd + Enter also run it</span>
+                    <button class="runBtn">Run ‣</button>
+                </div>
+                <div class="output"><span class="placeholder">// Output will show up here</span></div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
