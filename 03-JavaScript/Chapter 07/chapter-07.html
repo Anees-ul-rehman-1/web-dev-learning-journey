@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In this Chapter I've covered Introductin of DOM">
+    <meta name="author" content="Anees Ul Rehman">
+    <link rel="shortcut icon" href="/JS logo.png" type="image/png">
+    <link rel="stylesheet" href="chapter-07.css">
+
+    <title>Chapter 07 | JavaScript</title>
+</head>
+
+<body class="stack">
+    <h1>Chapter 07 &mdash; JavaScript</h1>
+    <main class="stack">
+        <section class="stack">
+            <h2>The 3 Musketers of Web Development</h2>
+            <div class="images stack">
+                <img src="images/html structure.png" alt="HMTL">
+                <img src="images/style.png" alt="CSS">
+                <img src="images/js.png" alt="JavaScript">
+            </div>
+            <div>
+                <h3>Starter Code</h3>
+                <pre><code>
+     &lt;style&gt; tag connects HTML with css
+     &lt;script&gt; tag connects HTML with JS
+                </code></pre>
+            </div>
+            <div>
+                <h3>HTML Boilerplate</h3>
+                <pre><code>
+     &lt;html&gt;
+         &lt;head&gt;
+             &lt;meta&gt;
+             &lt;titile&gt;Website Name&lt;/title&gt;
+         &lt;/head&gt;
+         &lt;body&gt;
+             &lt;!-- Content Tags ---&gt;
+         &lt;/body&gt;
+     &lt;/html&gt;
+                </code></pre>
+            </div>
+        </section>
+        <section class="stack">
+            <h2>Window object</h2>
+            <p class="shortBio">
+                The Window object represents an open window in a browser. It is borwser's bject (not JavaScript's) & is
+                automatically created by browser.
+            </p>
+            <p>It is a global object with lots of properties & methods.</p>
+        </section>
+        <section class="stack">
+            <h2>What is DOM?</h2>
+            <p class="shortBio">When a web page is loaded, the browser creates a <span class="blueText">Document Object
+                    Model</span> (DOM) of the page</p>
+            <img class="DOMImage" src="images/DOM-Tree1.webp" alt="DOM Tree">
+        </section>
+        <section class="stack">
+            <h2>DOM Manipulation</h2>
+            <div>
+                <h3>Selecting with id</h3>
+                <p class="shortBio">document.getElementsById("myId");</p>
+            </div>
+            <div>
+                <h3>Selecting with class</h3>
+                <p class="shortBio">document.getElementByClassName("myClass");</p>
+            </div>
+            <div>
+                <h3>Selecting with tag</h3>
+                <p class="shortBio">document.getElementByTagName("p");</p>
+            </div>
+            <div>
+                <h3>Query Selector</h3>
+                <pre><code>
+     document.querySelector("#myId / .myClass / tag");
+     //returns first element
+
+     document.querySelectorAll("#myId / .myClass / tag")
+     //returns a NodeList
+                </code></pre>
+            </div>
+            <div>
+                <h3>DOM Properties</h3>
+                <ul>
+                    <li><b>tagName:</b> returns tag for element nodes</li>
+                    <li><b>innerText:</b> returns the text content of the element and all its children</li>
+                    <li><b>innerHTML:</b> returns the plain text or HTML contents in the element</li>
+                    <li><b>textContent:</b> returns textual content even for hidden elements</li>
+                </ul>
+            </div>
+            <div>
+                <h3>DOM Attributes</h3>
+                <ul>
+                    <li>getAttribute(attr) // to get the attribute value</li>
+                    <li>setAttribute(attr, value) // to set the attribute value </li>
+                    <li>node.style</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Insert, Delete Elements</h3>
+                <pre><code>
+     let el = document.createElements("div")
+                </code></pre>
+                <ul>
+                    <li>node.append(el) // adds at the end of node (inside)</li>
+                    <li>node.prepend(el) // add at the start of node (inside)</li>
+                    <li>node.before(el) // adds before the node (outside)</li>
+                    <li>node.after(el) // adds after the node (outside)</li>
+                    <li>node.remove() //removes the node</li>
+                </ul>
+            </div>
+        </section>
+        <section class="stack">
+            <h2>Home Work</h2>
+            <img class="DOMImage" src="images/homework.png" alt="Homework">
+        </section>
+        <section class="questionSection stack">
+            <h2>Practice Set</h2>
+            <div>
+                <p>Q01: Create a h2 heading with text- "Hello JavaScript".Append"from Apna College students" to this
+                    text using JS.</p>
+                <div class="chapter stack">
+                    <div>
+                        <h3>Solution</h3>
+                        <p class="shortBio">Type code in below box and you output will also show here on the same page
+                        </p>
+                    </div>
+                    <div class="consoleWrap">
+                        <div class="consoleBar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playground.js</span>
+                        </div>
+                        <textarea spellcheck="false" class="jsInput">let heading = document.querySelector("#heading");
+heading.innerHTML = heading.innerHTML + "from Apna College Students";
+console.log(heading);</textarea>
+                        <div class="consoleAction">
+                            <span class="hint">Ctrl / Cmd plus Enter also run it</span>
+                            <button class="runBtn">Run ‣</button>
+                        </div>
+                        <div class="output"><span class="placeholder">//Output will show up here</span></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Q02: Create 3 divs with common class name-"box". Acces them & add some unique text to each of them.
+                </p>
+                <div class="chapter stack">
+                    <div>
+                        <h3>Solution</h3>
+                        <p class="shortBio">Type code in below box and you output will also show here on the same page
+                        </p>
+                    </div>
+                    <div class="consoleWrap">
+                        <div class="consoleBar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playground.js</span>
+                        </div>
+                        <textarea spellcheck="false" class="jsInput">
+console.log("It'll not work because there no HTML file connected to this JS");
+let idx = 1;
+let divs = document.querySelector('.box');
+for (let div of divs) {
+    div.innerHTML = `${div.innerHTML} (New Unique div ${idx})`;
+    idx++
+}</textarea>
+                        <div class="consoleAction">
+                            <span class="hint">Ctrl / Cmd plus Enter also run it</span>
+                            <button class="runBtn">Run ‣</button>
+                        </div>
+                        <div class="output"><span class="placeholder">//Output will show up here</span></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Q03: Create a new button element. Give it a text "click me", background color of red & text color of
+                    white.</p>
+                <p>Insert the button as the first element inside the body tag.</p>
+                <div class="chapter stack">
+                    <div>
+                        <h3>Solution</h3>
+                        <p class="shortBio">Type code in below box and you output will also show here on the same page
+                        </p>
+                    </div>
+                    <div class="consoleWrap">
+                        <div class="consoleBar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playground.js</span>
+                        </div>
+                        <textarea spellcheck="false" class="jsInput">let button = document.createElement('button');
+button.innerText  = "click me!";
+Object.assign(button.style, {
+    background: "red", 
+    color: "white",
+    paddingBlock: "1rem",
+    paddingInline: "2rem",
+    border: "none",
+    fontWeight: "600",
+});
+
+document.body.prepend(button);</textarea>
+                        <div class="consoleAction">
+                            <span class="hint">Ctrl / Cmd plus Enter also run it</span>
+                            <button class="runBtn">Run ‣</button>
+                        </div>
+                        <div class="output"><span class="placeholder">//Output will show up here</span></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>Q04: Create a peragraph tag in html, give it a class & some styling.</p>
+                <p>Now create a new class in CSS and try to append this class to the peragraph element.</p>
+                <p>Did you notice, how you overwrite the class name when you add a new one? Solve this problem using
+                    classList.</p>
+                <div class="chapter stack">
+                    <div>
+                        <h3>Solution</h3>
+                        <p class="shortBio">Type code in below box and you output will also show here on the same page
+                        </p>
+                    </div>
+                    <div class="consoleWrap">
+                        <div class="consoleBar">
+                            <div class="dot r"></div>
+                            <div class="dot y"></div>
+                            <div class="dot g"></div>
+                            <span>playground.js</span>
+                        </div>
+                        <textarea spellcheck="false" class="jsInput"></textarea>
+                        <div class="consoleAction">
+                            <span class="hint">Ctrl / Cmd plus Enter also run it</span>
+                            <button class="runBtn">Run ‣</button>
+                        </div>
+                        <div class="output"><span class="placeholder">//Output will show up here</span></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script src="chapter-07.js"></script>
+</body>
+
+</html>

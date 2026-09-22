@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #051630;
+    --border: #2c323d;
+    --text-color: #fff;
+    --muted: #8891a1;
+    --amber: #f2a93b;
+    --teal: #4fd1c5;
+    --coral: #ff7a6b;
+    --secondry-bg: #0650BE;
+    --console-bg: #21262F;
+}
+
+
+body {
+    background-color: var(--background);
+    font-family: sans-serif;
+    color: white;
+    line-height: 1.5;
+}
+
+h1 {
+    color: var(--amber);
+    background-color: var(--secondry-bg);
+    padding: clamp(.5rem, 5vw, 1rem);
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(1rem, 5vw, 3rem);
+}
+
+section {
+    width: min(100% - 4rem, 70rem);
+    padding: clamp(1rem, 5vw, 3rem);
+    gap: clamp(1rem, 5vw, 2rem);
+    box-shadow: 0 0 10px var(--secondry-bg);
+}
+
+h2 {
+    color: var(--amber);
+}
+
+.shortBio {
+    color: var(--muted);
+}
+
+.consoleWrap {
+    border: 2px solid var(--border);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.consoleBar {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--console-bg);
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.dot.r {
+    background-color: rgb(250, 20, 20);
+}
+
+.dot.y {
+    background-color: rgb(250, 250, 20);
+}
+
+.dot.g {
+    background-color: rgb(20, 250, 20);
+}
+
+.consoleBar span {
+    color: var(--muted);
+}
+
+.jsInput {
+    padding: 1rem 2rem;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--amber);
+    min-height: 10rem;
+}
+
+.consoleAction {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--console-bg);
+}
+
+.hint {
+    color: var(--muted);
+}
+
+.runBtn {
+    padding: .5rem 1.5rem;
+    border: none;
+    background-color: var(--amber);
+    transition: 0.3s ease;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+
+.runBtn:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+
+.output {
+    padding: 1rem 2rem;
+    white-space: pre-wrap;
+}
+
+.output .ok {
+    color: var(--teal);
+}
+
+.output .err {
+    color: var(--coral);
+}
+
+.placeholder {
+    color: var(--muted);
+}
+
+#domP{
+    min-height: 20rem;
+    background-color: white;
+    color: black;
+}
+
+.newParagraph{
+ background-color: yellow;
+}
