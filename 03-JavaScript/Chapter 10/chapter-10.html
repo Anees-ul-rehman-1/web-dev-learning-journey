@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO PRIMARY TAGS -->
+    <title>Chapter 10 JavaScript</title>
+    <meta name="title" content="Chapter 10 JavaScript">
+    <meta name="description" content="Classes & objects in JavaScript">
+    <meta name="author" content="Anees Ul Rehman">
+    <meta name="keywords" content="chapter 10, classes in JS, object">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="">
+
+    <!-- FACEBOOK LINKEDIN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Chapter 10 JavaScript">
+    <meta property="og:description" content="Classes & Objects in JavaScript">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="Chapter 10 JavaScript">
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Chapter 10 JavaScript">
+    <meta name="twitter:description" content="Classes & objects in JS">
+    <meta name="twitter:image" content="">
+
+    <link rel="icon" type="image/png" href="../JS logo.png">
+    <meta name="theme-color" content="">
+
+    <link rel="stylesheet" href="chaptr-10.css">
+</head>
+
+<body>
+    <h1>Chapter 10 &mdash; JavaScript</h1>
+    <main class="stack">
+        <section class="stack">
+            <h2>Classes, Objects & Error Handling</h2>
+            <h3>Prototypes in JS</h3>
+            <p>A JavaScript object is an entity having state and behavior (properties and menthod).</p>
+            <p>JS objects have a special perperty called prototype.</p>
+            <p>We can set prototype using __proto__</p>
+            <p class="note"><strong>Note: </strong>If object & prototype have same method object's method will be used.
+            </p>
+        </section>
+        <section class="stack">
+            <h2>Classes in Js</h2>
+            <h3>Constructor() method is:</h3>
+            <pre>
+<code>
+    class myClass{
+        constructor(){...}
+        
+        myMethod(){...}
+    }
+</code>
+</pre>
+            <ul>
+                <li>Constructor will automatically invoked by new</li>
+                <li>Constructor initialized object</li>
+            </ul>
+        </section>
+        <section class="stack">
+            <h2>Inheritance in Js</h2>
+            <p>Inheritance is passing down properties & methods from parent class to child class.</p>
+            <pre>
+<code>
+  class parent{
+
+  }
+
+  class child extends parent{
+
+  }
+</code>
+</pre>
+            <p class="note"><strong>Note:</strong> If Child * Parent have same method, child's method will be
+                used.[Method Overriding]</p>
+        </section>
+        <section class="stack">
+            <h2>Super Keyword</h2>
+            <p>The super keyword is used to call the constructor of its parent class to access the parent's properties
+                and methods.</p>
+            <pre>
+<code>
+    super(args) // calls Parent's constructor
+    
+    super.parentMethod(args)
+</code>
+</pre>
+        </section>
+        <section class="stack">
+            <h2>Error Handling (try-catch)</h2>
+            <pre>
+<code>
+    try{
+        ...normal code
+    } catch(err) {
+        //err is error object
+        ..handling error
+    }
+</code>
+</pre>
+        </section>
+        <section class="stack questionSection">
+            <h2>Practice Set</h2>
+            <p>Q01: You are creating a website for your college. Create a class User with 2 properties, name & email. It
+                also has a method called viewData() that allows user to view website data.</p>
+            <a href="practice/Q01.html">Check my solution here</a>
+            <p>Q02: Create a new class called Admin which inherits form User. Add a new method called editData to Admin that allows to edit website data.</p>
+            <a href="practice/Q02.html">Check my solution here</a>
+        </section>
+    </main>
+</body>
+
+</html>
