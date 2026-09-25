@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO PRIMARY META TAGS -->
+    <title>Rock Paper Scissors Game | Practice Project by Anees Ul Rehman</title>
+    <meta name="title" content="Rock Paper Scissors Game | Practice Project">
+    <meta name="description" content="A Rock Paper Scissors browser game built with HTML, CSS and JavaScript. Play against the computer, track wins, losses and draws, and view your game history.">
+    <meta name="author" content="Anees Ul Rehman">
+    <meta name="keywords" content="rock paper scissors, javascript game, html css javascript project, front end practice project, browser game">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="">
+
+    <!-- FACEBOOK / LINKEDIN GRAPH-->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Rock Paper Scissors Game | Practice Project">
+    <meta property="og:description" content="A Rock Paper Scissors browser game built with HTML, CSS and JavaScript. Play against the computer, track wins, losses and draws, and view your game history.">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="Rock Paper Scissors">
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rock Paper Scissors Game">
+    <meta name="twitter:description" content="A Rock Paper Scissors browser game built with HTML, CSS and JavaScript.">
+    <meta name="twitter:image" content="#060E20">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <meta name="theme-color" content="">
+
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background">
+        <img src="images/background_top_left.png" alt="" class="bgImage topCorner">
+        <img src="images/background_bottom_right.png" alt="" class="bgImage bottomCorner">
+    </div>
+    <header class="stackRow">
+        <div class="logoContainer stackRow">
+            <img src="images/logo.png" alt="" class="logoImage">
+            <div>
+                <h1>Rock <span class="blueAccent">Paper</span> <span class="purpleAccent">Scissors</span></h1>
+                <p class="logoP">Think &bull; Choose &bull; Win</p>
+            </div>
+        </div>
+    </header>
+    <main class="stack">
+        <section class="heroSection stackRow">
+            <div class="resultCards yourRes stack">
+                <div class="iconHeading stackRow">
+                    <div class="userIcon">
+                        <i data-lucide="user"></i>
+                    </div>
+                    You
+                </div>
+                <span class="resultNumber totalWinsNum">0</span>
+                <p>Wins</p>
+            </div>
+            <div class="resultCards drawRes stack">
+                <div class="iconHeading stackRow">
+                    <div class="drawIcon">
+                        <i data-lucide="scale"></i>
+                    </div>
+                    Draws
+                </div>
+                <span class="resultNumber totalDrawsNum">0</span>
+                <p>Draws</p>
+            </div>
+            <div class="resultCards botRes stack">
+                <div class="iconHeading stackRow">
+                    <div class="botIcon">
+                        <i data-lucide="bot"></i>
+                    </div>
+                    Computer
+                </div>
+                <span class="resultNumber totalLossesNum">0</span>
+                <p>Wins</p>
+            </div>
+        </section>
+        <section class="gameSection stackRow">
+            <h2 class="stackRow">Choose Your Move</h2>
+            <div class="gameBody stackRow">
+                <button type="button" class="gameAction yourRes stack" aria-label="Rock">
+                    <img class="actionImage" src="images/rock_icon.png" alt="Rock">
+                    Rock
+                </button>
+                <button type="button" class="gameAction paperBox stack" aria-label="Paper">
+                    <img class="actionImage" src="images/paper_icon.png" alt="Paper">
+                    Paper
+                </button>
+                <button type="button" class="gameAction botRes stack" aria-label="Scissors">
+                    <img class="actionImage" src="images/scissors_icon.png" alt="Scissors">
+                    Scissors
+                </button>
+            </div>
+        </section>
+        <section class="gameComparison stack">
+            <div class="valueComparison stack">
+                <div class="value stackRow">
+                    <div class="valImgBox yourChoiceImg stack">
+
+                    </div>
+                    <div class="valText stack">
+                        Your Choice
+                        <span class="yourChoice choiceName">-</span>
+                    </div>
+                </div>
+                <span class="vs stackRow">VS</span>
+                <div class="value stackRow">
+                    <div class="valImgBox comChoiceImg stack">
+                    </div>
+                    <div class="valText stack">
+                        Computer Choice
+                        <span class="comChoice choiceName">-</span>
+                    </div>
+                </div>
+            </div>
+            <div class="currentResult stack">
+                <i data-lucide="ghost"></i>
+                <p>Result Will Appear Here</p>
+            </div>
+        </section>
+        <section class="quickStats stack">
+            <div class="iconHeading stackRow">
+                <div class="quickIcon">
+                    <i data-lucide="chart-no-axes-column"></i>
+                </div>
+                Quick Stats
+            </div>
+            <div class="quickBoxes stackRow">
+                <div class="quickBox totalGames stack">
+                    <span class="totals totalGamesNum">0</span>
+                    Total Games
+                </div>
+                <div class="quickBox totalWins stack">
+                    <span class="totals totalWinsNum">0</span>
+                    Wins
+                </div>
+                <div class="quickBox totalLosses stack">
+                    <span class="totals totalLossesNum">0</span>
+                    Losses
+                </div>
+                <div class="quickBox totalDraws stack">
+                    <span class="totals totalDrawsNum">0</span>
+                    Draws
+                </div>
+            </div>
+        </section>
+        <section class="historySection stack">
+            <div class="historyHeader stackRow">
+                <div class="iconHeading stackRow">
+                    <i data-lucide="history"></i>
+                    Game History
+                </div>
+                <button class="btn clearBtn stackRow" aria-label="Clear History">
+                    <i data-lucide="trash"></i>
+                    Clear History
+                </button>
+            </div>
+            <div class="historyContent stackRow">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Built with &#9825; by <a href="https://github.com/Anees-ul-rehman-1" target="_blank"
+                rel="noopener noreferrer">Anees Ul Rehman</a> </p>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,644 @@
+:root {
+   /* ================================
+     BACKGROUND COLORS
+  ================================= */
+   --background: #060E20;
+   --background-secondary: #0A142A;
+   --background-tertiary: #0F1936;
+   --surface: #0B1E46;
+   --surface-light: #16215A;
+   --surface-dark: #061B2F;
+
+   /* ================================
+     BORDER COLORS
+  ================================= */
+   --border: #1E3563;
+   --border-light: #2D5ABB;
+   --border-blue: #2D5ABB;
+   --border-purple: #3E1483;
+   --border-pink: #3E1430;
+   /* ================================
+     PRIMARY / BRAND COLORS
+  ================================= */
+
+   --primary: #4B5BF5;
+   --primary-light: #6B74F9;
+   --primary-dark: #2D3BC7;
+
+   --secondary: #AD5FF7;
+   --secondary-light: #D078FF;
+   --secondary-dark: #621483;
+
+
+   /* ================================
+     ROCK COLORS
+  ================================= */
+
+   --rock: #2DB0F7;
+   --rock-light: #45C8FF;
+   --rock-dark: #2D5ABB;
+
+   --rock-bg: #0B1E46;
+   --rock-border: #2D5ABB;
+   --rock-glow: #2DB0F7;
+
+
+   /* ================================
+     PAPER COLORS
+  ================================= */
+
+   --paper: #AD5FF7;
+   --paper-light: #D078FF;
+   --paper-dark: #621483;
+
+   --paper-bg: #181144;
+   --paper-border: #3E1483;
+   --paper-glow: #AD5FF7;
+
+
+   /* ================================
+     SCISSORS COLORS
+  ================================= */
+
+   --scissors: #F55081;
+   --scissors-light: #F88EB3;
+   --scissors-dark: #AF3968;
+
+   --scissors-bg: #261330;
+   --scissors-border: #AF3968;
+   --scissors-glow: #F55081;
+
+
+   /* ================================
+     SUCCESS / WIN COLORS
+  ================================= */
+
+   --success: #2CDC98;
+   --success-light: #45E0A8;
+   --success-dark: #0D564D;
+
+   --success-bg: #04292F;
+   --success-border: #0D564D;
+   --success-glow: #2CDC98;
+
+
+   /* ================================
+     LOSS COLORS
+  ================================= */
+
+   --danger: #F55081;
+   --danger-light: #F88EB3;
+   --danger-dark: #AF3968;
+
+   --danger-bg: #261330;
+   --danger-border: #AF3968;
+
+
+   /* ================================
+     DRAW COLORS
+  ================================= */
+
+   --draw: #4B5BF5;
+   --draw-light: #6B74F9;
+   --draw-dark: #2D3BC7;
+
+   --draw-bg: #101C3D;
+   --draw-border: #334A8F;
+
+
+   /* ================================
+     TEXT COLORS
+  ================================= */
+
+   --text-primary: #EDF1F9;
+   --text-secondary: #B9C9E5;
+   --text-muted: #63708F;
+   --text-dark: #2D3854;
+
+   --text-white: #FFFFFF;
+
+
+   /* ================================
+     ICON COLORS
+  ================================= */
+
+   --icon-primary: #EDF1F9;
+   --icon-blue: #2DB0F7;
+   --icon-purple: #AD5FF7;
+   --icon-pink: #F55081;
+   --icon-green: #2CDC98;
+
+
+   /* ================================
+     SPECIAL ACCENT COLORS
+  ================================= */
+   --accent-blue: #2DB0F7;
+   --accent-purple: #AD5FF7;
+   --accent-pink: #F55081;
+   --accent-green: #2CDC98;
+   /* ================================
+     BUTTON COLORS
+  ================================= */
+   --button-primary: #4B5BF5;
+   --button-primary-hover: #5D6BFF;
+   --button-primary-active: #3B4BE0;
+   --button-secondary: #101C3D;
+   --button-secondary-hover: #162653;
+   --button-secondary-border: #2D5ABB;
+   /* ================================
+     CARD COLORS
+  ================================= */
+   --card-background: #0A142A;
+   --card-background-light: #0F1936;
+   --card-border: #1E3563;
+   --card-rock: #0B1E46;
+   --card-paper: #181144;
+   --card-scissors: #261330;
+   /* ================================
+     GAME RESULT COLORS
+  ================================= */
+   --win-background: #04292F;
+   --win-border: #0D564D;
+   --win-text: #2CDC98;
+   --loss-background: #261330;
+   --loss-border: #AF3968;
+   --loss-text: #F55081;
+   --draw-background: #101C3D;
+   --draw-border: #334A8F;
+   --draw-text: #6B74F9;
+   /* ================================
+     DECORATIVE COLORS
+  ================================= */
+   --decoration-purple: #3E1483;
+   --decoration-blue: #16215A;
+   --decoration-pink: #3E1430;
+   /* ================================
+     GRADIENT COLORS
+  ================================= */
+
+   --gradient-primary: linear-gradient(135deg,
+         #4B5BF5,
+         #AD5FF7);
+
+   --gradient-rock: linear-gradient(135deg,
+         #2DB0F7,
+         #2D5ABB);
+
+   --gradient-paper: linear-gradient(135deg,
+         #AD5FF7,
+         #621483);
+
+   --gradient-scissors: linear-gradient(135deg,
+         #F55081,
+         #AF3968);
+
+   --gradient-success: linear-gradient(135deg,
+         #2CDC98,
+         #0D564D);
+
+
+   /* ================================
+     SHADOW / GLOW COLORS
+  ================================= */
+
+   --shadow-dark: rgba(0, 0, 0, 0.35);
+   --glow-blue: rgba(45, 176, 247, 0.35);
+   --glow-purple: rgba(173, 95, 247, 0.35);
+   --glow-pink: rgba(245, 80, 129, 0.35);
+   --glow-green: rgba(44, 220, 152, 0.30);
+   --glow-primary: rgba(75, 91, 245, 0.35);
+}
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   position: relative;
+   font-family: sans-serif;
+   color: var(--text-secondary);
+   background-color: var(--background);
+   min-height: 100vh;
+}
+
+.topCorner {
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+
+.bottomCorner {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+
+.bgImage {
+   width: clamp(10rem, 20vw, 20rem);
+   z-index: -999;
+}
+
+/* UTILITY CLASSES */
+.btn {
+   background: none;
+   border: none;
+   cursor: pointer;
+   transition: 0.4s ease;
+   white-space: nowrap;
+}
+
+.btn:hover {
+   transform: translateY(-3px) scale(1.03);
+}
+
+.stack {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.stackRow {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+section {
+   width: min(100% - 5rem, 60rem);
+   flex-wrap: wrap;
+}
+
+/* HEADER STYLING */
+header.stackRow {
+   width: min(100% - 5rem, 60rem);
+   justify-content: space-between;
+   justify-self: center;
+   border-bottom: 1px solid var(--background-secondary);
+   padding: 1rem;
+   gap: 1rem;
+   flex-wrap: wrap;
+}
+
+.logoContainer {
+   gap: .5rem;
+}
+
+.logoP {
+   letter-spacing: .2rem;
+   font-size: .8rem;
+}
+
+h1 {
+   font-size: clamp(1.5rem, 2.5vw, 2rem);
+   color: var(--text-primary);
+}
+
+.blueAccent {
+   color: var(--accent-blue);
+}
+
+.purpleAccent {
+   color: var(--accent-purple);
+}
+
+/* MAIN CONTENT */
+main {
+   gap: 1rem;
+}
+
+/* HERO SECTION */
+.heroSection {
+   margin-top: 2rem;
+   gap: 1rem;
+}
+
+.quickBox,
+.resultCards {
+   padding: .5rem 1rem;
+   flex-grow: 1;
+   text-align: center;
+   gap: .5rem;
+   border-radius: 1rem;
+}
+
+.yourRes {
+   border: 1px solid var(--border-light);
+   background: var(--glow-blue);
+}
+
+.drawRes {
+   border: 1px solid var(--draw-border);
+   background: var(--draw-background);
+}
+
+.botRes {
+   border: 1px solid var(--border-pink);
+   background: var(--loss-background);
+}
+
+.iconHeading {
+   gap: .5rem;
+}
+
+.userIcon {
+   color: var(--icon-blue);
+}
+
+.drawIcon {
+   color: var(--draw);
+}
+
+.botIcon {
+   color: var(--icon-pink);
+}
+
+.resultNumber {
+   font-size: 1.5rem;
+   font-weight: 600;
+}
+
+/* GAME SECTION */
+.gameSection {
+   gap: 1rem;
+}
+
+h2 {
+   gap: 1rem;
+   font-size: clamp(1rem, 2.5vw, 1.5rem);
+   color: var(--text-primary);
+   text-align: center;
+}
+
+h2::before,
+h2::after {
+   content: '';
+   height: .2rem;
+   width: 4rem;
+}
+
+h2::before {
+   background: linear-gradient(to right, transparent, var(--button-primary));
+}
+
+h2::after {
+   background: linear-gradient(to right, var(--button-primary), transparent)
+}
+
+.quickBoxes,
+.gameBody {
+   width: 100%;
+   flex-wrap: wrap;
+   gap: 1rem;
+}
+
+.gameAction {
+   padding: .5rem;
+   gap: .5rem;
+   flex-grow: 1;
+   border-radius: 1rem;
+   color: var(--text-primary);
+   cursor: pointer;
+   transition: 0.4s ease;
+}
+
+.gameAction:hover {
+   transform: translateY(-5px);
+}
+
+.actionImage {
+   width: 6rem;
+}
+
+.paperBox {
+   background: var(--glow-purple);
+   border: 1px solid var(--border-purple);
+}
+
+/* GAME COMPARISON SECTION */
+.gameComparison {
+   gap: 1rem;
+   border: 1px solid var(--border);
+   background: var(--background-secondary);
+   border-radius: 1rem;
+   padding: 1rem;
+}
+
+.valueComparison {
+   width: 100%;
+   gap: 1rem;
+   justify-content: space-around;
+}
+
+.value {
+   gap: .5rem;
+}
+
+.valImgBox {
+   width: 3rem;
+   height: 3rem;
+   border-radius: 100%;
+   border: 1px solid var(--border);
+}
+
+.valImg {
+   width: 3rem;
+   height: 3rem;
+}
+
+.valText {
+   align-items: flex-start;
+   font-size: .8rem;
+}
+
+.choiceName {
+   color: var(--text-primary);
+   font-size: 1rem;
+   font-weight: 600;
+}
+
+.vs {
+   gap: 1rem;
+   font-size: .8rem;
+}
+
+.vs::before,
+.vs::after {
+   content: "";
+   height: .1rem;
+   width: 1.5rem;
+}
+
+.vs::before {
+   background: linear-gradient(to right, transparent, var(--text-primary));
+}
+
+.vs::after {
+   background: linear-gradient(to left, transparent, var(--text-primary));
+}
+
+
+/* RESULT BOX STYLING */
+.currentResult {
+   width: 100%;
+   gap: .5rem;
+   border-radius: 1rem;
+   padding: 1rem;
+   border: 1px solid var(--border);
+}
+
+.draw {
+   color: var(--draw);
+   gap: .5rem;
+}
+
+.resIcon {
+   width: 3rem;
+   aspect-ratio: 1;
+   border-radius: 100%;
+   border: 1px solid var(--border);
+}
+
+.won{
+   color: var(--win-text);
+   gap: .5rem;
+}
+
+.lose{
+   color: var(--loss-text);
+   gap: .5rem;
+}
+
+/* QUICK STATS SECTION  */
+.quickStats {
+   justify-content: flex-start;
+   border-radius: 1rem;
+   padding: 1rem;
+   border: 1px solid var(--border);
+   align-items: flex-start;
+   gap: 1rem;
+}
+
+.quickIcon {
+   color: var(--button-primary);
+}
+
+.quickIcon svg {
+   stroke-width: 4;
+}
+
+.quickBoxes {
+   gap: .5rem;
+}
+
+.quickBox {
+   border: 1px solid var(--border);
+   font-size: .8rem;
+   line-height: 1;
+   flex-grow: 1;
+}
+
+.totalGames {
+   background-color: var(--background-secondary);
+}
+
+.totalWins {
+   background-color: var(--win-background);
+   border: 1px solid var(--win-border);
+}
+
+.totalLosses {
+   background-color: var(--loss-background);
+   border: 1px solid var(--loss-border);
+}
+
+.totalDraws {
+   background-color: var(--draw-background);
+   border: 1px solid var(--draw-border);
+}
+
+.totals {
+   font-size: 1rem;
+   font-weight: 600;
+   color: var(--text-primary);
+}
+
+.totalWinsNum {
+   color: var(--win-text);
+}
+
+.totalLossesNum {
+   color: var(--loss-text);
+}
+
+.totalDrawsNum {
+   color: var(--draw-text);
+}
+
+/* HISTORY SECTION */
+.historySection {
+   border: 1px solid var(--border);
+   padding: 1rem;
+   border-radius: 1rem;
+   align-items: flex-start;
+   gap: 1rem;
+}
+
+.historyHeader {
+   width: 100%;
+   justify-content: space-between;
+}
+
+.clearBtn {
+   color: var(--button-primary);
+   gap: .5rem;
+}
+
+.clearBtn svg {
+   width: 1rem;
+}
+
+.historyContent {
+   gap: 1rem;
+   flex-wrap: wrap;
+}
+
+.hisRes {
+   gap: .5rem;
+}
+
+.hisIcon{
+   width: 3rem;
+   aspect-ratio: 1;
+   border-radius: 100%;
+   border: 1px solid var(--border);
+}
+
+.hisImg {
+   width: 2rem;
+}
+
+footer {
+   margin-top: 3rem;
+   padding: 1rem;
+   border-top: 1px solid var(--border);
+   text-align: center;
+}
+
+footer a {
+   color: var(--draw-text);
+   text-decoration: none;
+}
+
+footer a:hover {
+   color: var(--border-light);
+   text-decoration: underline;
+}
+
+@media (min-width: 570px) {
+   .valueComparison {
+      flex-direction: row;
+   }
+}
