@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO PRIMARY TAGS -->
+    <title>Chapter 11 | JavaScript</title>
+    <meta name="title" content="Chapter 11 &mdash; JavaScript">
+    <meta name="description" content="In this chapter I'll covere Callback hell, promisr cahins, async await etc">
+    <meta name="author" content="Anees Ul Rehman">
+    <meta name="keywords" content="async await, callback hell, promise chains, fetch api">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="">
+
+    <!-- FACEBOOK / LINKEDIN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Chapter 11 &mdash; JavaScript">
+    <meta property="og:description"
+        content="In this chapter I'll covere Callback hell, promisr cahins, async await etc">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="Chapter 11">
+
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="large_summary_card">
+    <meta name="twitter:title" content="Chapter 11 &mdash; JavaScript">
+    <meta name="twitter:description"
+        content="In this chapter I'll covere Callback hell, promisr cahins, async await etc">
+    <meta name="twitter:image" content="">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="../JS logo.png">
+    <meta name="theme-color" content="">
+
+    <!-- CSS STYLESHEET -->
+    <link rel="stylesheet" href="chapter-11.css">
+</head>
+
+<body>
+    <h1>Chapter 11 &mdash; JavaScript</h1>
+    <main class="stack">
+        <section class="stack">
+            <h2>Sync in JS</h2>
+            <h3>Synchronous</h3>
+            <p>Synchronous means the code runs in a particular sequence of instructions given in the program. Each
+                Instruction waits for the previous instruction to complete its execution.</p>
+            <h3>Asynchronous</h3>
+            <p>Due to synchronous programming, sometimes important instructions get blocked due to some previous
+                instructions. which causes a delay in the UI. Asynchronours code execution allows to execute next
+                instructions immediately and doesn't block the flow.</p>
+        </section>
+        <section class="stack">
+            <h2>Callbacks</h2>
+            <p>A callback is a function passed as an argument to another function</p>
+            <h2>Callback Hell</h2>
+            <p><span class="note">Callback Hell: </span>Nested callbacks stacked below one another forming a pyramid
+                structure. also called Pyramid of Doom.</p>
+            <p>This style of programming becomes difficult to understand & manage.</p>
+        </section>
+        <section class="stack">
+            <h2>Promises</h2>
+            <p>Promise is for "eventual" completion of task. It is an object in JS. and it is a solution to callback
+                hell.</p>
+            <pre>
+<code>
+ let promise = new Promise((resolve, reject) => {...})
+
+ <span class="note">Note:</span> Function with 2 handlers, resolve & reject are callbacks provided by us
+</code>
+</pre>
+            <p>A Javascript Promise Object can be:</p>
+            <ul>
+                <li><strong class="note">Pending: </strong>the result is undefined</li>
+                <li><strong class="note">Resolved: </strong>the result is a value (fulfilled)</li>
+                <li><strong class="note">Rejected: </strong>the result is an error object</li>
+            </ul>
+            <pre><code>
+.then() & .catch()
+
+promise.then((res) => {...})
+
+promise.catch((err) => {...})
+</code></pre>
+        </section>
+        <section class="stack">
+            <h2>Async-Await</h2>
+            <p>Async function always returns a promise.</p>
+            <p>async function myFunc() {...}</p>
+
+            <p>awiat pauses the execution of its surrounding async function until the promise is settled.</p>
+        </section>
+        <section class="stack bottomSection">
+            <h2>IIFE (Immeddiately Invoked Function Expression)</h2>
+            <p>IIFE is a function that is called immediately as soon as it is defined.</p>
+            <pre><code>
+  (function (){
+    // code here
+  }) ();
+
+  (() => {
+    // code here
+  }) ();
+
+  (async () => {
+    // code here
+  }) ();
+</code></pre>
+        </section>
+    </main>
+</body>
+
+</html>
