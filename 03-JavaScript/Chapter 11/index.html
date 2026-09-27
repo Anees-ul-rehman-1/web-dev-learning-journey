@@ -38,7 +38,26 @@
 </head>
 
 <body>
-    <script src="script.js"></script>
+    <main class="stack">
+        <div class="consoleWrapper">
+            <div class="consoleBar stack">
+                <div class="dot r"></div>
+                <div class="dot g"></div>
+                <div class="dot y"></div>
+                <span class="hint">playground.js</span>
+            </div>
+            <textarea id="jsInput" spellcheck="false" placeholder="// code JavaScript program here"></textarea>
+            <div class="consoleAction stack">
+                <p class="hint">// ctrl / cmd plus enter also run it</p>
+                <button class="runBtn">Run</button>
+            </div>
+            <div class="output">
+                <p class="placeholder">// Output will show up here</p>
+            </div>
+        </div>
+    </main>
+    <!-- <script src="script.js"></script> -->
+    <script src="console.js"></script>
 </body>
 
 </html>

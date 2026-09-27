@@ -1,0 +1,103 @@
+:root {
+    --backgroundColor: #051630;
+    --borderColor: #2c323d;
+    --textColor: #fff;
+    --muted: #8891a1;
+    --amber: #f2a93b;
+    --teal: #4fd1c5;
+    --coral: #ff7a6b;
+    --accentBg: #0650BE;
+    --consoleBg: #21262F;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.stack {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: var(--backgroundColor);
+    font-family: sans-serif;
+    color: var(--textColor);
+}
+
+main.stack {
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.consoleWrapper {
+    width: min(100% - 5rem, 70rem);
+    border: 1px solid var(--borderColor);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.consoleBar {
+    gap: .3rem;
+    padding: 1rem;
+    background-color: var(--consoleBg);
+}
+
+.dot {
+    width: .8rem;
+    height: .8rem;
+    border-radius: 100%;
+}
+
+.dot.y {
+    background-color: rgb(250, 250, 0);
+}
+
+.dot.g {
+    background-color: rgb(18, 250, 18);
+}
+
+.dot.r {
+    background-color: rgb(255, 18, 18);
+}
+
+#jsInput {
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    min-height: 10rem;
+    color: var(--amber);
+    padding: 1rem;
+}
+
+.consoleAction {
+    padding: .5rem 1rem;
+    background-color: var(--consoleBg);
+    justify-content: space-between;
+}
+
+.hint {
+    color: var(--muted);
+}
+
+.runBtn {
+    background-color: var(--amber);
+    border: none;
+    padding: .5rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.output {
+    padding: 1rem;
+}
+
+.err {
+    color: var(--coral);
+}
+
+.ok {
+    color: var(--teal);
+}
